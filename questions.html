@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roundtable 4 — Richard's questions</title>
+<style>
+  :root{
+    --paper:#FBFAF8;
+    --ink:#241C2B;
+    --plum:#5B1F5E;
+    --magenta:#A61A78;
+    --oxblood:#7E1D12;
+    --muted:#6B6470;
+    --rule:#E2DDE4;
+    --sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --serif: "Iowan Old Style", Georgia, "Times New Roman", serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.6;
+  }
+  .wrap{max-width:41rem;margin:0 auto;padding:3rem 1.4rem 6rem}
+
+  /* ---- masthead ---- */
+  .mast{border-bottom:2px solid var(--plum);padding-bottom:1.6rem;margin-bottom:2.4rem}
+  .mast h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:2.3rem;
+    line-height:1.15;
+    letter-spacing:-.01em;
+    margin:0 0 .6rem;
+    color:var(--plum);
+  }
+  .coords{color:var(--muted);font-size:.94rem;line-height:1.5;margin:0}
+  .coords strong{color:var(--ink);font-weight:600}
+
+  /* ---- section headings ---- */
+  h2{
+    font-family:var(--serif);
+    font-size:1.45rem;
+    font-weight:600;
+    line-height:1.25;
+    color:var(--plum);
+    margin:3.4rem 0 1rem;
+    padding-bottom:.45rem;
+    border-bottom:1px solid var(--rule);
+  }
+  h3{
+    font-family:var(--serif);
+    font-size:1.22rem;
+    font-weight:600;
+    line-height:1.3;
+    margin:2.8rem 0 .5rem;
+    color:var(--ink);
+  }
+  h3 .qn{color:var(--magenta);font-variant-numeric:tabular-nums}
+  p{margin:0 0 1rem}
+  strong{font-weight:600}
+  a{color:var(--plum)}
+
+  /* ---- status chip: encodes whether he speaks ---- */
+  .chip{
+    display:inline-block;
+    font-size:.78rem;
+    font-weight:600;
+    line-height:1;
+    padding:.36rem .55rem;
+    border:1px solid currentColor;
+    border-radius:2px;
+    margin:0 0 1rem;
+    letter-spacing:.01em;
+  }
+  .chip.named{color:var(--magenta)}
+  .chip.take{color:var(--plum)}
+  .chip.quiet{color:var(--muted)}
+
+  /* ---- the hero device: lines to say aloud ---- */
+  .say{
+    font-family:var(--serif);
+    font-size:1.3rem;
+    line-height:1.42;
+    color:var(--magenta);
+    border-left:3px solid var(--magenta);
+    padding:.2rem 0 .2rem 1.1rem;
+    margin:1.5rem 0;
+  }
+  .say .who{
+    display:block;
+    font-family:var(--sans);
+    font-size:.78rem;
+    font-weight:600;
+    color:var(--muted);
+    margin-bottom:.5rem;
+    letter-spacing:.02em;
+  }
+
+  /* ---- guardrails ---- */
+  .dont{
+    border-left:3px solid var(--oxblood);
+    padding:.1rem 0 .1rem 1.1rem;
+    margin:1.5rem 0;
+    color:var(--oxblood);
+  }
+  .dont p{margin:0 0 .5rem}
+  .dont p:last-child{margin-bottom:0}
+  .dont strong{font-weight:700}
+
+  /* ---- verified fact blocks ---- */
+  .fact{
+    border-left:3px solid var(--plum);
+    padding:.1rem 0 .1rem 1.1rem;
+    margin:1.5rem 0;
+    font-size:.95rem;
+    color:var(--ink);
+  }
+  .fact p{margin:0 0 .5rem}
+  .fact p:last-child{margin-bottom:0}
+
+  ul,ol{margin:0 0 1rem;padding-left:1.2rem}
+  li{margin-bottom:.42rem}
+  li::marker{color:var(--muted)}
+
+  /* ---- contents ---- */
+  .toc{margin:0 0 1rem;padding:0;list-style:none;columns:2;column-gap:1.6rem}
+  .toc li{margin-bottom:.4rem;font-size:.93rem;break-inside:avoid}
+  .toc a{text-decoration:none;border-bottom:1px solid var(--rule)}
+  .toc a:hover{border-bottom-color:var(--plum)}
+  .toc .num{color:var(--magenta);font-weight:600;font-variant-numeric:tabular-nums;margin-right:.3rem}
+
+  /* ---- the gates: a real sequence, so numbered ---- */
+  .gates{list-style:none;padding:0;margin:1.2rem 0 1.4rem;counter-reset:g}
+  .gates li{
+    counter-increment:g;
+    position:relative;
+    padding-left:2.1rem;
+    margin-bottom:.7rem;
+  }
+  .gates li::before{
+    content:counter(g);
+    position:absolute;left:0;top:.05rem;
+    width:1.5rem;height:1.5rem;
+    border:1px solid var(--plum);
+    color:var(--plum);
+    font-size:.82rem;font-weight:600;
+    display:flex;align-items:center;justify-content:center;
+    border-radius:50%;
+  }
+  .gates b{font-weight:600}
+
+  /* ---- ambush table ---- */
+  table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.95rem}
+  th{
+    text-align:left;font-weight:600;font-size:.86rem;color:var(--muted);
+    padding:0 .8rem .5rem 0;border-bottom:1px solid var(--plum);
+  }
+  td{padding:.7rem .8rem .7rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
+  td:first-child{color:var(--oxblood);width:38%}
+  td:last-child{color:var(--ink)}
+
+  .note{font-size:.93rem;color:var(--muted)}
+  hr{border:0;border-top:1px solid var(--rule);margin:2.6rem 0}
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    .wrap{padding:2rem 1.1rem 4rem}
+    .mast h1{font-size:1.85rem}
+    .say{font-size:1.15rem}
+    .toc{columns:1}
+    td:first-child{width:42%}
+  }
+  @media print{
+    body{background:#fff;font-size:11pt}
+    .wrap{padding:0;max-width:none}
+    .toc{display:none}
+    h2,h3{break-after:avoid}
+    .say,.dont,.fact{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <h1>Around the world in 80 deals</h1>
+  <p class="coords">
+    Roundtable 4 · Club Room · Thursday 24 September, 15.05&ndash;15.50<br>
+    <strong>Aseem Gupta</strong>, Markets Treasury, HSBC Bank &mdash; the only buy-side seat<br>
+    Working notes on the eleven questions Richard sent ahead
+  </p>
+</header>
+
+<p class="note">Magenta is what you say out loud. Oxblood is what you don&rsquo;t.</p>
+
+<ul class="toc">
+  <li><a href="#read"><span class="num">&sect;</span>The set-level read</a></li>
+  <li><a href="#gates"><span class="num">&sect;</span>The five gates</a></li>
+  <li><a href="#q1"><span class="num">1</span>Uzbek securitisation</a></li>
+  <li><a href="#q2"><span class="num">2</span>Georgia: repo to real money</a></li>
+  <li><a href="#q3"><span class="num">3</span>Triodos</a></li>
+  <li><a href="#q4"><span class="num">4</span>Fairstone</a></li>
+  <li><a href="#q5"><span class="num">5</span>Cost implications</a></li>
+  <li><a href="#q6"><span class="num">6</span>New country vs new issuer</a></li>
+  <li><a href="#q7"><span class="num">7</span>Balkans</a></li>
+  <li><a href="#q8"><span class="num">8</span>Secondary regulations</a></li>
+  <li><a href="#q9"><span class="num">9</span>Encumbrance</a></li>
+  <li><a href="#q10"><span class="num">10</span>Routes to market</a></li>
+  <li><a href="#q11"><span class="num">11</span>Which debuts</a></li>
+  <li><a href="#ambush"><span class="num">&sect;</span>Ambush drills</a></li>
+  <li><a href="#richard"><span class="num">&sect;</span>What to send Richard</a></li>
+  <li><a href="#verified"><span class="num">&sect;</span>Verified &amp; unverified</a></li>
+</ul>
+
+<h2 id="read">The set-level read</h2>
+
+<p>Forty-five minutes, six panellists, eleven questions. Richard gets through seven or eight at
+best. You are named in four: <strong>Q5, Q6, Q7 and Q11</strong>.</p>
+
+<p><strong>The running order works against you.</strong> Q1&ndash;Q4 are issuer show-and-tell &mdash;
+four sequential narratives that will eat over half the clock. Your named questions then cluster in
+the compressed back half. The realistic outcome is twenty quiet minutes followed by three questions
+in a rush.</p>
+
+<p><strong>The fix.</strong> Take one uninvited intervention early, on Q2 or Q3. Thirty seconds, no
+more. It plants you as the buy-side reference point so Richard starts coming back to you by
+instinct rather than by list.</p>
+
+<p><strong>Two questions walk into your guardrails.</strong> Q5 asks you for cost. Q7 asks whether
+you&rsquo;d look at a Balkan debut. Both have clean answers below, and both are worth asking him to
+reword &mdash; the rewrites give him better material too.</p>
+
+<p><strong>The missing question.</strong> Nobody asks who actually buys a debut covered bond. That
+is the panel&rsquo;s blind spot and your home ground. Offer it to him as an insert after Q5.</p>
+
+<p><strong>The file is OCR-damaged</strong> &mdash; &ldquo;farniliar&rdquo;, &ldquo;transact
+credible&rdquo;, &ldquo;wouid you iook&rdquo;, &ldquo;W decisions&rdquo;. Q8 has words missing
+outright. Ask for a clean copy; the lost text may hide a sharper question than the one you can see.</p>
+
+<h2 id="gates">Your one device: the five gates</h2>
+
+<p>Use this on Q5, Q6, Q7, Q11 and every ambush. It answers &ldquo;would you buy X&rdquo; without
+ever giving a credit view, because it describes how institutional portfolios work rather than what
+you think of anyone.</p>
+
+<ol class="gates">
+  <li><b>Eligibility</b> &mdash; liquidity treatment, risk weighting, central bank repo. Binary, no partial credit.</li>
+  <li><b>Index</b> &mdash; inclusion, minimum size, rating floor. This is the benchmarked bid.</li>
+  <li><b>Rating</b> &mdash; achievable uplift against the country ceiling.</li>
+  <li><b>Operations</b> &mdash; country limits, currency, ICSD settlement, English documentation, listing, onboarding.</li>
+  <li><b>Liquidity</b> &mdash; free float, committed market-makers, repo-ability, a credible deal two and three.</li>
+</ol>
+
+<p class="say"><span class="who">Say this once, early &mdash; everything later is a callback</span>
+Credit is gate zero, and it&rsquo;s usually the easiest one. The four after it are where debuts
+actually die.</p>
+
+<hr>
+
+<h3 id="q1"><span class="qn">1.</span> Murodjon &mdash; Uzbekistan&rsquo;s first securitisation</h3>
+<span class="chip quiet">Not yours &mdash; comment only if invited</span>
+
+<p>The read-across, if he opens it up: a securitisation builds the plumbing a covered bond later
+needs &mdash; loan-level data, servicing records, a valuation convention, registrar, paying agent,
+trustee. Uzbekistan did it in a regulatory sandbox with five originating banks. That is
+market-building design rather than a funding trade, and it is the right sequence.</p>
+
+<div class="fact">
+  <p><strong>Facts you can drop.</strong> First placement 8 July 2026 on the Tashkent RSE, UZS
+  40.56bn, issued by UMRC SPV LLC as the opening tranche of a UZS 200bn pilot under Presidential
+  Decree PD-26 of 21 February 2025. Originators: NBU, Asakabank, Uzpromstroybank, Xalq, Agrobank.
+  The new capital markets bill runs to 16 chapters and 123 articles, drafted with EBRD, IFC, ADB,
+  IsDB and IOSCO input.</p>
+</div>
+
+<p class="note">Reword: four questions in one. The capital-markets-law part should be a follow-up.</p>
+
+<h3 id="q2"><span class="qn">2.</span> Rada &mdash; Georgia, from repo collateral to real investors</h3>
+<span class="chip take">Your early intervention</span>
+
+<p>His premise checks out, so don&rsquo;t correct it. Georgia passed its covered bond law in 2022
+off the back of an EBRD&ndash;NBG technical assistance project begun in 2021, and covered bonds sit
+on the central bank&rsquo;s eligible collateral list.</p>
+
+<p>Your thirty seconds: an instrument designed for the central bank gets sized for the central bank.
+No free float, no price discovery, no secondary. It is the retained issuance problem in miniature
+&mdash; which Panel IV is debating two doors down at the same moment.</p>
+
+<p>What the transition actually needs: free float and benchmark size; disclosure in English on a
+harmonised template; a currency with a functioning swap market; listed and ICSD-settled. Until
+those exist the third-party bid isn&rsquo;t priced wide, it is simply absent.</p>
+
+<p class="say">The question isn&rsquo;t what the bond looks like while the central bank is buying
+it. It&rsquo;s what it looks like the day the central bank stops.</p>
+
+<h3 id="q3"><span class="qn">3.</span> Kees &mdash; Triodos: smaller, newer, differently rated</h3>
+<span class="chip quiet">Not yours &mdash; but a trap sits in the wording</span>
+
+<div class="dont">
+  <p><strong>&ldquo;Less highly rated&rdquo; invites a credit view on a named issuer sitting next
+  to you.</strong> Do not take it. Speak about smaller issuers as a class throughout.</p>
+</div>
+
+<p>Your add: the differentiator isn&rsquo;t roadshow effort, it&rsquo;s an upfront decision about
+whether the programme can ever reach benchmark size <em>and repeat</em>. Investors will press on
+replenishment capacity, because a small pool ages faster relative to issuance than a large one. And
+a strong energy-efficiency profile buys a defined bid, not a broader one &mdash; green is a
+segment, not a substitute for liquidity.</p>
+
+<p class="note">Reword: ask him to drop &ldquo;less highly rated&rdquo; for &ldquo;smaller and
+newer&rdquo;, and let Kees raise the rating himself if he wants to.</p>
+
+<h3 id="q4"><span class="qn">4.</span> Peter &mdash; Fairstone: Canada, currency, encumbrance</h3>
+<span class="chip quiet">Not yours &mdash; check the premise before you speak</span>
+
+<div class="dont">
+  <p><strong>Fairstone doesn&rsquo;t appear on CMHC&rsquo;s registered programme list.</strong> If
+  Peter is a prospective rather than actual issuer, the framing changes. Don&rsquo;t assume a live
+  programme.</p>
+</div>
+
+<div class="fact">
+  <p>OSFI caps assets pledged for covered bonds at <strong>5.5% of on-balance-sheet assets</strong>
+  &mdash; revised calculation effective 1 August 2019, with the temporary pandemic increase to 10%
+  unwound in 2021. CMHC-insured mortgages and loans above 80% LTV are excluded from cover pools;
+  substitute assets are capped at 10% of the pool.</p>
+</div>
+
+<p>Your point, and it is a good one: the cap is a percentage of total assets, so for a small bank
+the absolute number is small &mdash; and it collides with benchmark size. A modest balance sheet
+multiplied by 5.5% may not support a liquid curve at all. That is the real bind, and it is
+arithmetic rather than credit.</p>
+
+<p>On currency, it cuts both ways. A foreign-currency deal gets a bigger book but adds swap costs
+and basis risk a small treasury may not be resourced to run. A domestic deal is cheaper to execute
+into a thin bid for a non-Big-Six name.</p>
+
+<h3 id="q5"><span class="qn">5.</span> Elena and Aseem &mdash; cost implications</h3>
+<span class="chip named">You are named</span>
+
+<div class="dont">
+  <p><strong>This is the price question.</strong> No number, in basis points or otherwise,
+  including hypothetically. Give him something better than a number: give him where the cost sits.</p>
+</div>
+
+<ul>
+  <li><strong>Setup</strong> &mdash; legal, rating, cover pool monitor, systems, reporting. Fixed,
+  doesn&rsquo;t scale down. For a small programme it dominates everything else.</li>
+  <li><strong>Debut concession</strong> &mdash; real, one-off, and the least interesting part of the
+  answer.</li>
+  <li><strong>The curve</strong> &mdash; what deals two and three clear at, driven by index status
+  and liquidity rather than credit.</li>
+</ul>
+
+<p class="say">The concession on the debut is the cheapest thing about it. The expensive part is
+what deal three costs when nobody&rsquo;s making a market in deals one and two.</p>
+
+<p class="note">Reword to ask for: &ldquo;What are the cost implications?&rdquo; becomes
+&ldquo;Where does the cost actually show up?&rdquo; Same question, invites structure instead of a
+number.</p>
+
+<h3 id="q6"><span class="qn">6.</span> Aseem &mdash; new country versus new issuer</h3>
+<span class="chip named">You are named, solo &mdash; your best question</span>
+
+<p>New issuer in a known country: credit and size work inside a framework that already exists. The
+gates are open. Weeks.</p>
+
+<p>New country: every gate is shut, and some of them don&rsquo;t open by analysis. Eligibility is a
+policy determination. Index inclusion is a rules decision. A country limit is set by a risk
+framework, not a portfolio manager. Quarters, sometimes longer &mdash; and the approval sits with
+people who never see the deal.</p>
+
+<p class="say">A new issuer is a credit decision. A new country is an infrastructure decision
+&mdash; and infrastructure decisions don&rsquo;t get made deal by deal.</p>
+
+<p class="say"><span class="who">The kicker, if you want the quote of the session</span>
+Which is why the country that matters most in a debut is often not the issuer&rsquo;s. It&rsquo;s
+the investor&rsquo;s.</p>
+
+<h3 id="q7"><span class="qn">7.</span> The Balkans &mdash; &ldquo;would you look at it?&rdquo;</h3>
+<span class="chip named">You are named &mdash; highest risk on the sheet</span>
+
+<p><strong>Split the verb first.</strong> &ldquo;We look at everything. Looking is free.&rdquo;
+Light, defuses, buys you the room.</p>
+
+<p><strong>Then run the gates as conditions.</strong> What would have to be true:</p>
+<ul>
+  <li>benchmark size in a currency with a functioning swap market</li>
+  <li>a segregation opinion that survives issuer insolvency under local law &mdash; an opinion, not an intention</li>
+  <li>at least one international rating with visible headroom to the country ceiling</li>
+  <li>harmonised transparency reporting, in English</li>
+  <li>listed and ICSD-settled</li>
+  <li>committed market-making beyond the syndicate desks</li>
+</ul>
+
+<p class="say"><span class="who">The honest observation, which is also the provocative one</span>
+If the first deal only clears because a development bank takes half of it, you&rsquo;ve financed a
+bank. You haven&rsquo;t opened a market.</p>
+
+<div class="dont">
+  <p><strong>Don&rsquo;t confirm which Balkan countries have passed laws.</strong> Montenegro,
+  Albania and Moldova are unverified, and Rada owns that ground.</p>
+  <p><strong>Don&rsquo;t name a preferred country. Don&rsquo;t say yes.</strong></p>
+</div>
+
+<p class="note">Reword to ask for: &ldquo;Would you look at it?&rdquo; becomes &ldquo;What would
+have to be true before it reached your desk?&rdquo;</p>
+
+<h3 id="q8"><span class="qn">8.</span> Secondary regulations and execution risk</h3>
+<span class="chip take">Not addressed to you &mdash; take it anyway</span>
+
+<p>The strongest question on the sheet, and an investor question in disguise. What must be settled
+before deal one rather than learned through issuance:</p>
+
+<ul>
+  <li>insolvency segregation, and whether it is enforceable</li>
+  <li>who administers the cover pool after issuer default, and with what powers</li>
+  <li>maturity extension &mdash; the trigger, who pulls it, what it does to the swaps</li>
+  <li>valuation methodology and revaluation frequency for LTV</li>
+  <li>the reporting template, and its language</li>
+  <li>eligibility determinations obtained <em>before</em> pricing, not after</li>
+</ul>
+
+<p class="say">Flexibility left to the regulator is optionality written against the investor. And it
+doesn&rsquo;t get priced wide. It just doesn&rsquo;t get priced &mdash; we don&rsquo;t show up.</p>
+
+<h3 id="q9"><span class="qn">9.</span> Encumbrance limits versus market access</h3>
+<span class="chip take">Open to all &mdash; read the room first</span>
+
+<p>Richard has publicly argued encumbrance is &ldquo;not so bad&rdquo; and will fish for agreement.
+Don&rsquo;t be a stooge and don&rsquo;t be contrarian for sport. Take the buyer&rsquo;s position
+&mdash; you hold both secured and unsecured bank paper, which nobody else on the panel can say.</p>
+
+<p>The level matters less than three things: is the cap disclosed, is it stable, and is what&rsquo;s
+left behind transparent. A predictable low cap is easier to underwrite than a generous discretionary
+one, because discretion gets exercised for someone else at the worst possible moment.</p>
+
+<p>On persuading regulators, the argument isn&rsquo;t &ldquo;let us encumber more&rdquo;. It is
+that a smaller bank with a tested secured funding channel depends less on its flightiest
+liabilities. That is a financial-stability case, and it needs evidence rather than advocacy &mdash;
+which the industry has not yet assembled.</p>
+
+<div class="dont">
+  <p><strong>Don&rsquo;t lobby, speak for any institution&rsquo;s regulatory view, or comment on a
+  named regulator&rsquo;s decision.</strong></p>
+</div>
+
+<h3 id="q10"><span class="qn">10.</span> Routes to market</h3>
+<span class="chip take">Open to all &mdash; take it</span>
+
+<p>The investor&rsquo;s answer reframes the question usefully: I don&rsquo;t care who owns the
+process, I care that someone does, and that the output is standard enough to build a limit
+framework around.</p>
+
+<p>Contract-law issuance is fast and produces a bond. A law is slow and produces a category. You
+can&rsquo;t build a country limit around a bespoke structure; you can build one around a category.</p>
+
+<p class="say">Contract law gets you a bond. A law gets you a market.</p>
+
+<p>On ownership: it should sit with whoever will still be there for deal five. Central-bank-led
+routes get the plumbing right and the demand wrong. Development-bank-led routes get deal one done
+and can leave the market dependent on the development bank.</p>
+
+<h3 id="q11"><span class="qn">11.</span> Which debuts would you most like to see</h3>
+<span class="chip named">You are named &mdash; this is your close</span>
+
+<p>A preference isn&rsquo;t a credit view, but naming a country reads as endorsement. Answer with a
+characteristic instead of a map reference.</p>
+
+<p class="say">I&rsquo;d rather see the second deal from a market that has already debuted than a
+first deal from a new one. A debut proves a law works. The second and third prove a market exists
+&mdash; and that&rsquo;s the one that gets me an index, a market-maker and a limit.</p>
+
+<p class="say"><span class="who">If pushed to name one</span>The one I&rsquo;d most like to see is
+the one that prices without a development bank in the book.</p>
+
+<h2 id="ambush">Ambush drills</h2>
+
+<table>
+  <thead><tr><th>They say</th><th>You say</th></tr></thead>
+  <tbody>
+    <tr><td>Give me a number.</td><td>I&rsquo;ll give you the components. The number is someone else&rsquo;s job.</td></tr>
+    <tr><td>Would you buy Uzbekistan?</td><td>That&rsquo;s an eligibility question before it&rsquo;s a credit question.</td></tr>
+    <tr><td>What&rsquo;s your book doing?</td><td>Decline in one clause, then pivot &mdash; &ldquo;but here&rsquo;s what any treasury book runs into.&rdquo;</td></tr>
+    <tr><td>Anything on HSBC funding, or a named sovereign.</td><td>One short decline. Move on. Don&rsquo;t explain the refusal twice.</td></tr>
+  </tbody>
+</table>
+
+<p>The rule: refuse <em>once</em>, briefly, then immediately give them something better. A long
+refusal sounds evasive. A short refusal followed by a good point sounds disciplined.</p>
+
+<h2 id="richard">What to send Richard</h2>
+
+<p>Short note, this week. Five asks:</p>
+<ol>
+  <li>A clean copy of the questions &mdash; 7, 8 and 10 arrived garbled.</li>
+  <li>Q5: &ldquo;cost implications&rdquo; becomes &ldquo;where does the cost actually show up?&rdquo;</li>
+  <li>Q7: &ldquo;would you look at it?&rdquo; becomes &ldquo;what would have to be true before it reached your desk?&rdquo;</li>
+  <li>Q3: drop &ldquo;less highly rated&rdquo; for &ldquo;smaller and newer&rdquo;.</li>
+  <li>Offer the missing question as an insert after Q5 &mdash; <em>who actually buys a debut covered
+  bond, and how much of the book has to be real money before you can call it a market?</em></li>
+</ol>
+
+<p>Worth a quiet line too: confirm Fairstone&rsquo;s programme status so Q4&rsquo;s premise holds
+on the day.</p>
+
+<h2 id="verified">Verified and unverified</h2>
+
+<div class="fact">
+  <p><strong>Confirmed as at 10 September 2026.</strong></p>
+  <p>Uzbek securitisation &mdash; 8 July 2026, UZS 40.56bn first placement of a UZS 200bn pilot,
+  UMRC SPV LLC, Decree PD-26, five originating banks, sandbox, Tashkent RSE.</p>
+  <p>Uzbek capital markets bill &mdash; 16 chapters, 123 articles; EBRD, IFC, ADB, IsDB and IOSCO
+  involved.</p>
+  <p>OSFI covered bond limit &mdash; 5.5% of on-balance-sheet assets, effective 1 August 2019;
+  pandemic increase to 10% unwound in 2021.</p>
+  <p>Canadian cover pools &mdash; insured mortgages and loans above 80% LTV excluded; substitute
+  assets capped at 10%.</p>
+  <p>Georgia &mdash; covered bond law 2022; EBRD&ndash;NBG technical assistance from 2021; covered
+  bonds are central-bank-eligible collateral.</p>
+</div>
+
+<div class="dont">
+  <p><strong>Still unverified.</strong> Fairstone&rsquo;s covered bond programme, which does not
+  appear on CMHC&rsquo;s registered list. Montenegro, Albania and Moldova covered bond legislation.
+  Treat both as Richard&rsquo;s premises, not yours.</p>
+</div>
+
+</div>
+</body>
+</html>
