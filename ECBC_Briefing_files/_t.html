@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://fff10ba4-3394-4271-bf80-3bddfeb0ce27.frame.claudeusercontent.com/_f/1788902497-ae52/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.Z2x4WzWL.js","assets":"assets.B-TeBG35.js","comments":"comments.bcDtmHz-.js","db":"db.CZqN5n8-.js","downloads":"downloads.By20cRKz.js","embed":"embed.swQslL0W.js","endpoints":"endpoints.LitwTvTv.js","mcp":"mcp.DNIsJHuR.js","network":"network.B5UA9Su4.js","permissions":"permissions.BQy3BjmI.js","room":"room.DZE7zT7V.js","sample":"sample.BEk0MOOy.js","self":"artifact.Z2x4WzWL.js","user":"user.DLeycE5q.js"},"transforms":"_transforms.CNapGGha.js","comments":"_comments.CoT-GWno.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.CMCg6PeI.js"}                                                                                                                                                                                                                                                                                             </script><script>(function(){"use strict";var dn=3e5;function Ut(t,e){try{const n=t("navigation")[0],o=[n.responseStart,n.redirectEnd-n.redirectStart,n.domContentLoadedEventStart,e()];for(let a=0;a<o.length;a++){if(!(o[a]>=0&&o[a]<=3e5))return;o[a]=o[a]|0}return o}catch{return}}var zt=["light","dark","system"],Kt=/^[A-Za-z0-9_-]{1,64}$/,ut=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,$t=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function Wt(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||$t.has(e)}var ft="data-ldx-props";function Vt(t,e){if(e.toLowerCase()===ft)return!0;const n=t.getAttribute(ft);if(n===null)return!1;try{const o=JSON.parse(n);if(o===null||typeof o!="object"||Array.isArray(o))return!0;const a=e.toLowerCase();return Object.keys(o).some(l=>l.toLowerCase()===a)}catch{return!0}}var hn="http://www.w3.org/1999/xhtml",Xt="http://www.w3.org/2000/svg",Gt=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),Yt=new Set(["script","style"]);function Jt(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!Gt.has(e):t.namespaceURI===Xt?!Yt.has(e):!1}function qe(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function Zt(t,e){const n=t.length,o=e.length;let a=0;for(;a<n&&a<o&&qe(t.charCodeAt(a),e.charCodeAt(a));)a++;let l=0;for(;l<n-a&&l<o-a&&qe(t.charCodeAt(n-1-l),e.charCodeAt(o-1-l));)l++;return{p:a,s:l}}function Qt(t,e){const n=t.firstChild;if(t.childNodes.length!==1||n===null||n.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const o=n.data,a=o.length,l=e.length,{p:i,s:f}=Zt(o,e);i===a&&f===0&&a===l||n.replaceData(i,a-i-f,e.slice(i,l-f));const T=n.data,w=t.ownerDocument.getSelection?.()??null,O=w!==null&&w.rangeCount>0&&(w.anchorNode===n||w.focusNode===n)?{anchor:w.anchorNode,anchorOffset:w.anchorOffset,focus:w.focusNode,focusOffset:w.focusOffset}:null;let _=-1,R=-1;for(let h=0;h<T.length&&h<e.length;h++){const M=T.charCodeAt(h),K=e.charCodeAt(h);M!==K&&qe(M,K)&&(_<0&&(_=h),R=h)}const m=_>=0;if(m&&n.replaceData(_,R-_+1,e.slice(_,R+1)),m&&O!==null&&O.anchor!==null&&O.focus!==null)try{w.setBaseAndExtent(O.anchor,O.anchorOffset,O.focus,O.focusOffset)}catch{}}var er=new Set(["html","head","body","frameset"]);function tr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&er.has(t.localName)}function rr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!Kt.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[n,o]of Object.entries(e.attrsSet))if(!ut.test(n)||typeof o!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const n of e.attrsRemoved)if(typeof n!="string"||!ut.test(n))return!1}return!0}function nr(t,e){if(t===null||typeof t!="object")return!1;const{seq:n,elements:o}=t;if(typeof n!="number"||!Number.isSafeInteger(n)||!Array.isArray(o)||o.length===0||o.length>64)return!1;for(let a=0;a<o.length;a++)if(!e(o[a]))return!1;return!0}function or(t){return t===null||typeof t!="object"?!1:nr(t.__frame_patch,rr)}function ar(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function lr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function sr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function ir(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const n=e.theme;return typeof n=="string"&&zt.includes(n)}var cr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],ur=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function fr(t){return typeof t=="string"&&ur.includes(t)?t:"other"}var dr=Object.freeze({until:null,now:!1}),hr="__claude_hot",pr="__claude_hot_in",mr=/^__claude_hot(?:_in)?(?::|$)/,dt=/^[0-9a-z]{1,32}$/,Be=t=>t===void 0?hr:"__claude_hot:"+t,de=t=>t===void 0?pr:"__claude_hot_in:"+t;function _r(t,e){const n=[];for(let o=0;o<t.length;o++){const a=t.key(o);a!==null&&a!==e&&mr.test(a)&&n.push(a)}for(const o of n)t.removeItem(o)}function vr(t){let e=null;try{e=z(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!dt.test(e.k)?null:he(e.g)?{k:e.k,g:e.g}:{k:e.k}}var pn=262144,yr=3e3,ht=/^[a-z0-9._:-]{1,64}$/,gr=["none","hot-restart","hard-reload"],wr=["asset","doc","added","removed"],br=1500,Er=/^[0-9a-f]{64}$/;function z(t){return t!==null&&typeof t=="object"?t:null}function he(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function pt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Sr(t){return t===void 0||typeof t=="string"&&ht.test(t)}function mt(t){const e=z(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function Ue(t){const e=z(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&pt(e.seq)&&typeof e.handoff=="string"&&cr.includes(e.handoff)&&Sr(e.note)}function Ar(t){const e=z(t);return e!==null&&he(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||Ue(e.from))}function kr(t){const e=z(t);return e!==null&&e.kv===1&&he(e.gen)&&Ue(e.from)&&Object.hasOwn(e,"data")}function Rr(t){const e=z(t);return e!==null&&e.__frame_hot_snapshot===!0&&he(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||mt(e.deadline))&&pt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Tr(t){const e=z(t);return e!==null&&e.__frame_hot_start===!0&&he(e.gen)&&Ue(e.from)}function _t(t){const e=z(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function vt(t){if(t==null||typeof t=="string")return!0;const e=z(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function Or(t){const e=z(t);return e!==null&&typeof e.path=="string"&&wr.includes(e.kind)&&vt(e.from)&&vt(e.to)}function Lr(t){return t===null?null:Object.freeze(t.filter(Or))}function Pr(t){const e=z(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&_t(e.from)&&_t(e.to)&&(e.changed===null||Array.isArray(e.changed))&&gr.includes(e.required)&&mt(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Er.test(e.preflight))}var oe=/^[\w.-]+\.js$/;function Mr(t,e,n){return n?"inert":typeof e=="string"&&oe.test(e)?t?[e]:"inert":t?"inert":"framed"}var yt=Object.freeze({[Symbol("claude.hot.restart")]:!0});function gt(t,e){let n;try{n=t??sessionStorage}catch{return null}const o=Be(e?.k),a=de(e?.k);let l=null;try{l=n.getItem(o)}catch{}try{n.removeItem(o)}catch{}try{_r(n,a)}catch{}let i=null;if(l!==null&&!(e!==null&&e.g===void 0))try{const f=JSON.parse(l);kr(f)&&(e===null||f.gen===e.g)&&(i=f)}catch{}if(i===null)try{n.removeItem(a)}catch{}return i}function Nr(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var Cr=/^[^/\\?#]{1,128}$/,wt=t=>Cr.test(t)&&t!=="."&&t!=="..";function bt(t,e,n){const o=new URL(t),a="/_f/"+e+"/";if(!e||!o.pathname.startsWith(a)||!wt(n))return null;const l=o.search.slice(1).split("&").filter(i=>!/^__frame_t(?:=|$)/.test(i)).join("&");return o.origin+"/_f/"+n+"/"+o.pathname.slice(a.length)+(l?"?"+l:"")+o.hash}var Ae="{}";function pe(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Et(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function St(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function jr(t,e,n,o=null){const a=setTimeout,l=clearTimeout,i=queueMicrotask,f=performance.now.bind(performance),T=new TextEncoder;let w=null,O=null;try{w=history,O=w.replaceState.bind(w)}catch{}const _=(...r)=>{try{console.warn(...r)}catch{}};let R=Nr(),m=null;try{m=sessionStorage}catch{}const h={storage:m,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:R,key:o?.k};let M=o?.k;const K=typeof requestAnimationFrame=="function"?requestAnimationFrame:r=>a(()=>r(f()),16);let v=e?.data??{},L=pe(e?.from),S=e?.gen??0,N=e!==null,$=!1,J=!1,W=null,_e=!1;const ve=new AbortController;let ye=null,C=null,ge=null,we=!1,s=()=>{};const p=new Promise(r=>{s=r});let b=!1,j=!1,I=!1,B,A=null,U=!1,le=!1;const se=r=>{for(const c of[Be(r),de(r)])try{m?.removeItem(c)}catch{}},D=(r,c)=>{try{c!==null&&n.post(r,c)}catch{}},Z=()=>{const r={__frame_hot:!0,ready:C!==null,accept:ge!==null};b&&(r.readData=!0),I&&(r.threw=!0),A?.assess&&(r.preflight=!0),D(r,W)};let be=!1,d=!1,H=!1,X=!1;const G=()=>{be||!_e||H||(be=!0,D({__frame_reveal_hold:!0},"*"))},re=()=>new Promise(r=>{let c,u=0;const y=P=>{if(c===void 0)c=P;else if(P!==c||++u>=8){r();return}try{K(y)}catch{r()}};try{K(y)}catch{r()}}),te=()=>{H=!0,D({__frame_reveal_ready:!0},"*")},Ee=r=>{d||(d=!0,r.then(c=>{if(c===!1)return;let u=null;try{u=A?.settle?.()??null}catch{}return(u===null?re():new Promise(y=>{a(y,50),Promise.resolve(u).then(y,y)}).then(re)).then(te)}))},rn=()=>{if(X||!H)return;X=!0;const r=()=>{try{A?.afterReveal?.()}catch{}};r(),re().then(()=>{r(),te()})},Ne=(r=!1)=>{if(we||C===null||!N||!J)return;we=!0;const c=C,u=v;i(()=>{let y;try{y=c(u)}catch(x){throw s(!1),x}let P=!1;try{P=typeof y?.then=="function"}catch{}if(!P){s(!0);return}Promise.resolve(y).then(()=>s(!0),x=>{s(!1),i(()=>{throw x})})}),Ee(r?p:n.dcl.then(()=>p))},Ce=r=>typeof r=="string"&&ht.test(r)?r:void 0,Qe=r=>{const c={__frame_hot_restart:!0},u=Ce(r?.note);u!==void 0&&(c.note=u),r?.required==="hard-reload"&&(c.required="hard-reload"),D(c,W)},It=Object.freeze({get data(){return J||(j=!0),!N&&!b&&(b=!0,J&&Z()),v},get from(){return L},get gen(){return S},signal:ve.signal,snapshot(r){typeof r=="function"&&(ye=r)},ready(r){typeof r!="function"||C!==null||(C=r,G(),Z(),$&&D({__frame_hot_ready:!0,gen:S},W),Ne())},accept(r){typeof r=="function"&&(ge=r,Z())},restart(r){const c={note:r?.note,required:r?.required};if(J){Qe(c);return}const u=B;B={note:Ce(u?.note)??c.note,required:u?.required==="hard-reload"||c.required==="hard-reload"?"hard-reload":void 0}}});let je=null,xt=()=>{};const nn=new Promise(r=>{xt=r});let on=null;const Ft=()=>on??=n.dcl.then(()=>{let r=!1;try{r=je!==null&&je.expect()}catch{}if(!r)return;const c=je.maxMs;return new Promise(u=>{nn.then(u),a(u,c)})}),Dt=()=>{if(!U||le||A===null)return;le=!0;const r=A;Ft().then(()=>{try{H||r.afterStart(St(e),!1)}catch{}})},Ht=r=>{e!==null&&j&&(b=!0),v={},L=null,S=0;try{m?.removeItem(de(o?.k))}catch{}e!==null&&!r&&Ee(n.dcl.then(()=>C!==null?p:void 0))},an=()=>{U=!0,Ee(Ft().then(()=>C!==null?p:void 0)),Dt()};try{addEventListener("error",()=>{I||C!==null||(I=!0,Z())})}catch{}let ne=-1,et,tt,Se=!0,rt=!1,nt,Ie=null;const ot=r=>{const c=Ie===null;Ie=Se&&r[0]!=="withheld"?r:["withheld",r[1],Ae];let u=r[0];if(Se&&u!=="withheld"){const P={ver:R,handoff:u};et!==void 0&&(P.seq=et),tt!==void 0&&(P.note=tt);try{if(m===null)throw new Error("no storage");m.setItem(Be(M),'{"kv":1,"gen":'+ne+',"from":'+JSON.stringify(P)+(nt!==void 0?',"k":'+JSON.stringify(nt):"")+',"data":'+(u==="ok"?r[2]:Ae)+"}")}catch{u="unavailable"}}else{u="withheld",se(M);try{A?.release?.()}catch{}}const y={__frame_hot_snapshotted:!0,gen:ne,handoff:u,bytes:r[1]};r[3]!==void 0&&(y.errName=r[3]),D(y,W),c&&(u==="snapshot_error"||u==="unclonable"||u==="oversize")&&_("claude.hot: snapshot",u,r[3])},ie=r=>{try{return fr(r?.name)}catch{return"other"}},ce=(r,c,u=0)=>ot(c===void 0?[r,u,Ae]:[r,u,Ae,ie(c)]),ln=r=>{if(r.gen<=ne)return;const c=ne>=0;if(ne=r.gen,et=r.seq,tt=Ce(r.note),typeof r.key=="string"&&dt.test(r.key)&&r.key!==M&&(se(M),M=r.key),Se&&=r.handoff!==!1,c){Ie!==null?ot(Ie):rt&&D({__frame_hot_held:!0,gen:ne},W);return}ve.abort();const u=Object.freeze({handoff:Se,timeoutMs:r.timeoutMs,deadline:r.deadline??dr}),y=ye,P=()=>{if(Se)try{nt=A?.capture()}catch{}if(y===null){ce("empty");return}let E=!1;const q=a(()=>{E||(E=!0,ce("snapshot_timeout"))},Math.max(0,u.timeoutMs));Promise.resolve().then(()=>y(u)).then(ue=>{if(E)return;E=!0,l(q);let Q;try{Q=JSON.stringify(ue)}catch(at){ce("unclonable",at);return}if(typeof Q!="string"){ce("unclonable");return}let ee=Q.length;try{ee=T.encode(Q).length}catch{}if(ee>262144){ce("oversize",void 0,ee);return}ot(["ok",ee,Q])},ue=>{E||(E=!0,l(q),ce("snapshot_error",ue))})};let x=null;try{x=A?.holdForIme()??null}catch{}if(x===null)P();else{rt=!0,D({__frame_hot_held:!0,gen:ne},W);const E=()=>{rt=!1,P()};x.then(E,E)}},sn=r=>{if(!$||N||C===null||r.gen!==S)return;let c=null;try{c=gt(m,o&&{k:o.k,g:r.gen})}catch{}if(c!==null&&c.gen!==r.gen){c=null;try{m?.removeItem(de(o?.k))}catch{}}v=c?.data??{},L=Et(pe(c?.from??r.from),pe(r.from)),c!==null&&(S=c.gen),N=!0,$=!1;const u=St(c);p.then(y=>{try{y&&A?.afterStart(u,!0)}catch{}}),Ne(!0)};let xe=0;const cn=r=>{const c=ge;if(c===null||r.id<=xe)return;xe=r.id;const u=A?.assess;if(r.preflight===void 0||u===void 0){qt(r,c);return}let y=!1;const P=q=>{y||(y=!0,l(E),r.id===xe&&qt(r,c,q))},x=()=>P(u.timeout(r)),E=a(x,br+100);u.run(r,window).then(P,x)},qt=(r,c,u)=>{let y,P=!1,x=!1,E,q,ue=null;const Q=g=>{if(x)return!1;if(E!==void 0&&E!==g)return _(`claude.hot: u.${g}() ignored - u.${E}() was called first`),!1;const Y=E===void 0;return E=g,Y},ee=g=>{E="restart",_(`claude.hot: ${g} - restarting`)},at=()=>{if(!Q("adopt")||r.id!==xe)return;const g=r.to.ver;if(Fe.required!=="none"){ee(`u.adopt() needs required 'none', it is '${Fe.required}'`);return}if(!wt(g)){ee("u.adopt() cannot address this version");return}if(!R||g===R)return;const Y=R,V=h.entry;let De="",st,fe=null,He;try{De=location.href,st=w.state,fe=bt(De,Y,g),fe!==null&&(O(st,"",fe),location.pathname.startsWith("/_f/"+g+"/")?fe=location.href:He="navigate event canceled")}catch(ct){He=ie(ct)}if(He!==void 0){q="adopt_failed",ee(`adopt_failed ${He}; URL not changed`);return}fe===null?(q="adopt_skipped",_(`claude.hot: adopt_skipped - page already left /_f/${Y}/; URL not changed, update still applied`)):q="adopted",R=h.ver=g;try{h.entry=bt(V,Y,g)??V}catch{}const it=fe;ue=()=>{if(R===g){if(it!==null)try{if(location.href!==it)_("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(O(st,"",De),location.href!==De){_("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}q="adopt_reverted",_("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(ct){_(`claude.hot: adopt_revert_failed ${ie(ct)} - URL still at the new version`);return}R=h.ver=Y,h.entry=V,it===null&&(q=void 0)}}},Fe=Object.freeze({from:{ver:r.from.ver,seq:r.from.seq},to:{ver:r.to.ver,seq:r.to.seq},changed:Lr(r.changed),required:r.required,deadline:r.deadline,adopt:at,defer(){return Q("defer")&&Fe.deadline.now&&ee("u.defer() past the deadline"),yt},restart(g){return Q("restart"),E==="restart"&&!x&&(y??=Ce(g?.note),P||=g?.required==="hard-reload"),yt},...u?.update}),un=(g,Y)=>{x=!0,g==="threw"?(ue?.(),y??=ie(Y).toLowerCase()):E===void 0&&_(g==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const V={__frame_hot_verdict:!0,id:r.id};V.verdict=g==="threw"||E===void 0||E==="restart"?"restart":E==="adopt"?"applied":"deferred",V.verdict==="restart"&&(P&&(V.required="hard-reload"),y!==void 0&&(V.note=y)),q!==void 0&&(V.verdict==="applied"||q!=="adopted")&&(V.adopt=q),D(Object.assign(V,u?.verdict),W)};let Bt=!1;const lt=(g,Y)=>Bt?!1:(Bt=!0,l(fn),un(g,Y),!0),fn=a(()=>lt("timeout"),r.verdictTimeoutMs);Promise.resolve().then(()=>c(Fe)).then(()=>lt("settled"),g=>{!lt("threw",g)&&E==="adopt"&&Qe({note:ie(g).toLowerCase()}),_("claude.hot: accept",ie(g))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:It,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:It,boot:h,afterConnect(){_e=!0,(e!==null||C!==null)&&G()},onInit(r,c){W=c,J=!0;const u=Ar(r)?r:null;u?.phase==="final"&&e!==null&&e.gen===u.gen?(N=!0,L=Et(L,pe(u.from)),an()):($=u?.phase==="pending",Ht($),N=!$,S=u?.gen??0,L=pe(u?.from)),Z(),$&&C!==null&&D({__frame_hot_ready:!0,gen:S},c),B!==void 0&&(Qe(B),B=void 0),Ne()},onNoInit(){J=!0,Ht(!1),N=!0,Ne()},onShell(r){return r?.__frame_revealed===!0?(rn(),!1):Rr(r)?(ln(r),!0):Tr(r)?(sn(r),!0):Pr(r)?(cn(r),!0):!1},attachExtras(r){A=r,Dt(),r.assess&&Z()},inSlot:()=>de(M),hydration(r,c){je??={expect:r,maxMs:c}},hydrated(){xt()},carried(){return N?v:{}},presented:()=>H}}var mn="frame_ldx_runtime",Ir="frame_ldx_build",_n="script#an-form",xr=256;function At(t,e,n){for(const o of t)n(o)&&t.delete(o);t.size>=xr&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function ze(t,e,n){try{const o=t[e];if(typeof o!="function")return;t[e]=function(...a){const l=o.apply(this,a);try{n(this)}catch{}return l}}catch{}}var Ke;function Fr(){if(Ke)return Ke;const t={media:new Set,contexts:new Set,onStart:null,onPause:null};Ke=t;const e=window.HTMLMediaElement?.prototype;e&&(ze(e,"play",a=>{At(t.media,a,l=>l.paused),t.onStart?.(a)}),ze(e,"pause",a=>t.onPause?.(a)));const n=window.AudioContext,o=window.AudioNode?.prototype;return n&&o&&ze(o,"connect",a=>{const l=a.context;l instanceof n&&(At(t.contexts,l,i=>i.state==="closed"),t.onStart?.(l))}),t}function Dr(t){let e=window;for(let n=0;e.parent&&e.parent!==e&&n<8;n++)if(e=e.parent,t(e))return!0;return!1}function Hr(){let t=null;const e=()=>t??parent,n=o=>t?o===t:Dr(a=>a===o);return{post(o,a){if(t){e().postMessage(o,a);return}let l=parent;for(let i=0;i<8&&(l.postMessage(o,a),!(!l.parent||l.parent===l));i++)l=l.parent},on(o){const a=l=>{const i=l.source;n(i)&&o(l.data,l.origin,l.isTrusted,()=>{t??=i})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:o=>({post(a,l){if(l?.activation){e().postMessage(a,{targetOrigin:o,includeUserActivation:!0});return}if(l?.transfer){e().postMessage(a,o,l.transfer);return}e().postMessage(a,o)},on(a,l){const i=f=>{n(f.source)&&f.origin===o&&a(f.data,f)};return addEventListener("message",i,l),()=>removeEventListener("message",i,l)}})}}function qr(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var $e="__frame_scroll",Br=150,Ur=310,zr=160,Kr=3e4;function $r(){let t=0,e=!1,n=!1,o=!1,a=0,l=null;const i=v=>{try{sessionStorage.setItem($e,JSON.stringify({y:v}))}catch{}},f=()=>{if(clearTimeout(t),l===null)return;const v=l;l=null,i(v)},T=()=>{if(e){e=!1;return}n=!0,l=scrollY,clearTimeout(t),t=setTimeout(f,Br)};try{addEventListener("scroll",T,{passive:!0}),addEventListener("pagehide",f)}catch{}const w=()=>{let v;try{v=sessionStorage.getItem($e)}catch{return null}if(v===null)return null;let L;try{L=JSON.parse(v)}catch{L=null}const S=L?.y;if(!(typeof S=="number"&&Number.isFinite(S)&&S>=0)){try{sessionStorage.removeItem($e)}catch{}return null}return S};let O=!1;const _=v=>{try{const L=scrollY;scrollTo({top:v,left:0,behavior:"instant"}),a=v,o=!0,clearTimeout(t),l=null,i(v);const S=scrollY;S!==L&&(e=!0),S!==v&&!O&&(O=!0,addEventListener("load",()=>{try{if(scrollY===S){const N=w();_(N!==null?N:a)}}catch{}},{once:!0}))}catch{}},R=()=>{try{return!!location.hash}catch{return!0}};let m=!1;const h=()=>{try{if(m||innerWidth>Ur||innerHeight>zr)return;m=!0;const v=Date.now(),L=()=>{try{removeEventListener("resize",L)}catch{}if(Date.now()-v>Kr||n||R())return;const S=w();_(S!==null?S:a)};addEventListener("resize",L)}catch{}};let M=!1,K=!1;return{restore(){if(M||(M=!0,R()))return;const v=w();v!==null&&(_(v),h())},promoted(){if(K||(K=!0,R()))return;const v=w();v!==null?(_(v),h()):o&&_(a)}}}function Wr(t,e,n,o){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:T=>T})??null}catch{}const l=window.Worker,i=l?.prototype,f=Object.freeze({Worker:l,workerOn:i?.addEventListener,workerPost:i?.postMessage,workerTerminate:i?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});n(t).then(T=>T?.bootTopLevel?T.bootTopLevel(f,o):o.settle()).catch(()=>o.settle())}var vn="modulepreload",yn=function(t){return"/"+t},gn={},Vr=function(e,n,o){let a=Promise.resolve();function l(i){const f=new Event("vite:preloadError",{cancelable:!0});if(f.payload=i,window.dispatchEvent(f),!f.defaultPrevented)throw i}return a.then(i=>{for(const f of i||[])f.status==="rejected"&&l(f.reason);return e().catch(l)})},Xr=window===top,kt=Object.getOwnPropertyDescriptor(window,"claude"),ke=Mr(Xr,window.__FRAME_PREAMBLE?.topLevel,kt?.writable===!1),We=typeof ke=="object"&&ke[0],k=We?qr():Hr();(function(){const t=Object.defineProperty,e=globalThis,n=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let o=0;for(let a=0;a<n.length;a++){const l=n[a];try{t(e,l,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[l]}catch{}try{t(e,l,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[l]=="function"&&o++}if(o&&ke==="framed")try{k.post({__frame_rtc_lockdown_failed:o},"*")}catch{}})();var Gr=1e4,Yr=2e3,Ve=2e3,Rt=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Tt(t){for(const e of Rt)if(e.endsWith(":*"))try{const n=new URL(t);if(`${n.protocol}//${n.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Re=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Te=window.__FRAME_PREAMBLE?.transforms,Xe=window.__FRAME_PREAMBLE?.comments,Ge=window.__FRAME_PREAMBLE?.translate,me=window.__FRAME_PREAMBLE?.ldx;function Ot(t){return Vr(()=>import("/_runtime/"+t),void 0)}var Oe=new Set,Jr=setTimeout,Zr=800+800*Math.random();function ae(t){return Ot(t).catch(()=>new Promise(e=>Jr(e,Zr)).then(()=>Ot(t+"?r=1")).then(e=>(e!==void 0&&Oe.add(t),e)))}function Lt(t,e,n){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},transforms:new Map,shellOrigin:e,shell:n,mount:Ze,hooks:Pe,pipe:()=>({wrap:(o,a)=>(...l)=>{try{return a(...l)}catch(i){return Promise.reject(i)}}})}}var Le=null,F=null;function Pt(t,e,n){try{Object.defineProperty(t,e,{value:n,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:n,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var Ye=!1,Pe={editBefore:null,edit:null};function Qr(t,e,n=!1){const o=[];let a;if(n)try{Pe.editBefore?.(t)}catch{}for(const l of t.elements){const i=document.querySelector(`[data-id="${l.target}"]`);if(!i){a=l.target;break}if([...Object.keys(l.attrsSet??{}),...l.attrsRemoved??[]].some(f=>!Wt(f)||Vt(i,f))){a=l.target;break}if(l.text!==void 0&&(!Jt(i)||tr(i))){a=l.target;break}for(const[f,T]of Object.entries(l.attrsSet??{}))if(!Nt(i,f)){try{i.setAttribute(f,T)}catch{}Mt(i,f,T)}for(const f of l.attrsRemoved??[])Nt(i,f)||(i.removeAttribute(f),Mt(i,f,null));typeof l.text=="string"&&Qt(i,l.text),o.push(l.target)}if(n)try{Pe.edit?.(t.seq,o,a)}catch{}if(a!==void 0){k.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:o}}))}catch{}}function Mt(t,e,n){if(!(t instanceof HTMLInputElement))return;const o=e.toLowerCase();o==="checked"?t.checked=n!==null:o==="value"&&t.type!=="file"&&(t.value=n??"")}function Nt(t,e){const n=e.toLowerCase(),o=t;return n==="data-id"||(n==="value"||n==="checked")&&(o.__artifactSecret===!0||/^(password|hidden|file)$/.test(o.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${o.autocomplete??""}`))}function Ct(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,Ye=!0):Ye&&(delete e.dataset.theme,e.style.colorScheme="",Ye=!1)}var Me=new Map;function en(){let t;const e={u:new Promise(n=>{t=n}),r:n=>{e.done=!0,t(n)},done:!1,nulled:!1};return e}function Je(){for(const t of Me.values())t.done||(t.nulled=!0,t.r(null))}var tn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),Ze=(t,e)=>{const n=Me.get(t);if(!n||n.done){n?.nulled&&F&&k.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},F);return}const o=typeof e=="function"?Object.setPrototypeOf(e,tn):Object.assign(Object.create(null),e);typeof o.then=="function"&&delete o.then,n.r(Object.freeze(o))};function jt(){const t=kt?.value??{};Pt(window,"claude",t);for(const e of Object.keys(Re)){if(t[e]!==void 0){Pt(t,e,t[e]);continue}Me.set(e,en())}if(t.use===void 0){const e=n=>{if(typeof n!="string"||!Object.hasOwn(Re,n))return Promise.resolve(null);const o=Me.get(n);return o?o.u:Promise.resolve(t[n]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(ke==="framed"){const t=Te&&oe.test(Te)?ae(Te).catch(()=>{}):Promise.resolve(void 0),e=s=>{if(s.type==="auxclick"&&s.button!==1)return;const p=s.target,b=p&&p.closest?p.closest("a[href],area[href]"):null;if(!b)return;const j=b.getAttribute("href");if(!j)return;let I;try{I=new URL(j,document.baseURI)}catch{return}if((I.protocol==="http:"||I.protocol==="https:")&&I.origin!==location.origin){s.preventDefault();const B=(b.getAttribute("target")??"").toLowerCase(),A=s.type==="auxclick"||s.metaKey||s.ctrlKey||s.shiftKey||s.altKey||!["","_self","_top","_parent"].includes(B);k.post({__frame_nav:!0,url:I.href,newTab:A},"*")}};addEventListener("click",e,!0),addEventListener("auxclick",e,!0);const n={},o=s=>{s.isTrusted&&(n.pointer=!0)},a=s=>{s.isTrusted&&(n.click=!0)};addEventListener("pointermove",o,{capture:!0,passive:!0}),addEventListener("click",a,{capture:!0,passive:!0});const l={cb:null};addEventListener("keydown",s=>l.cb?.(s),!0);const i={cb:null};addEventListener("keydown",s=>i.cb?.(s));const f=Fr();t.then(s=>s?.installEscapeForward?.(l,p=>{F&&k.post(p,F)})),t.then(s=>{try{s?.installFocusKeep?.()}catch{}}),t.then(s=>{if(!s?.wireNav)return;const p=k.port("*");s.wireNav(p),removeEventListener("click",e,!0),removeEventListener("auxclick",e,!0),removeEventListener("pointermove",o,!0),removeEventListener("click",a,!0),s.wireEngagement?.(n,p)});let T=null;try{T=$r()}catch{}const w=document.readyState==="loading"?new Promise(s=>document.addEventListener("DOMContentLoaded",()=>s(),{once:!0})):Promise.resolve();let O=null,_=null;try{_=vr(window.name),O=gt(null,_)}catch{}const R=jt();let m=null;try{m=jr(R,O,{post:(s,p)=>k.post(s,p),dcl:w},_)}catch{}t.then(s=>{try{m&&s?.installHotExtras?.(m)}catch{}});let h=null;const M=()=>Array.isArray(h?.flags)&&h.flags.includes("frame_ldx_runtime")&&!!me&&oe.test(me)&&document.querySelector("script#an-form")!==null;try{m?.hydration(M,yr)}catch{}let K=null,v=0;const L=k.on((s,p,b,j)=>{Tt(p)&&ar(s)&&(j(),h=s.__frame_init,F=p,L(),clearTimeout(v),K?.())});k.post({__frame_connect:!0},"*");try{m?.afterConnect()}catch{}const S=setTimeout,N=clearTimeout;let $=()=>NaN,J=()=>[];try{$=performance.now.bind(performance),J=performance.getEntriesByType.bind(performance)}catch{}let W=0;const _e=()=>{try{k.post({__frame_alive:!0},"*")}catch{}W=S(_e,Yr)},ve=()=>N(W);_e(),addEventListener("load",ve,{once:!0});const ye=new Promise(s=>{K=s,v=setTimeout(()=>{L(),s()},Gr)}),C=new WeakSet;addEventListener("error",s=>{s.target&&C.add(s.target)},!0);const ge=()=>{let s=[];try{s=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(b=>!b.sheet&&!b.disabled&&!C.has(b)&&b.getAttribute("href")&&URL.canParse(b.href)&&(!b.media||matchMedia(b.media).matches))}catch{}let p=s.length;return p===0?Promise.resolve():new Promise(b=>{try{const j=Ve-$(),I=S(b,j>0?j<Ve?j:Ve:0),B=()=>{--p===0&&(N(I),b())};for(const A of s)A.addEventListener("load",B,{once:!0}),A.addEventListener("error",B,{once:!0})}catch{b()}})};w.then(()=>{try{T?.restore()}catch{}}),Promise.all([ye,w,t]).then(([,,s])=>{if(h?.hostOverlays!==!0||!F)return;let p=!1;try{p=s?.declaresCover?.()===!0}catch{}k.post({__frame_layout:{cover:p}},F)});const we={cb:null};k.on((s,p)=>{if(Tt(p)&&lr(s)){try{T?.promoted()}catch{}we.cb?.()}}),ye.then(async()=>{if(!h||!F){Je();try{m?.onNoInit()}catch{}return}if(Ct(h.theme),h.hostVisible===!1&&t.then(d=>d?.applyHostVisible?.(!1,f)),h.hostKeys!==void 0){const d=F,H=h.hostKeys;t.then(X=>X?.installHostKeyForward?.(i,H,G=>k.post(G,d)))}try{m?.onInit(h.hot,F)}catch{}const s=F,p=k.port(s);let b=!1,j=!1;k.on((d,H,X)=>{if(H!==s)return;try{if(m?.onShell(d))return}catch{}if(ir(d)&&Ct(d.__frame_theme.theme),sr(d)){const te=d.__frame_host_visible.visible;t.then(Ee=>Ee?.applyHostVisible?.(te,f))}or(d)&&Qr(d.__frame_patch,s,X);const G=d?.__fc_mode;G&&typeof G=="object"&&!b&&Xe&&oe.test(Xe)&&(b=!0,ae(Xe).then(te=>te.install?.(s,G.on===!0,p)).catch(()=>{}));const re=d?.__ft_cmd;re&&typeof re=="object"&&!j&&Ge&&oe.test(Ge)&&(j=!0,ae(Ge).then(te=>te.install?.(s,re,p)).catch(()=>{}))});const I=Object.keys(h.capabilities??{}).filter(d=>Object.hasOwn(Re,d)).map(d=>[d,Re[d]]).filter(d=>typeof d[1]=="string"&&oe.test(d[1])),B=await Promise.allSettled(I.map(([,d])=>ae(d))),A=await t,U=F;if(A?.buildBoot||k.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},U),A?.buildBoot)try{Le=A.buildBoot(h,A.TRANSFORMS??{},{shellOrigin:U,mount:Ze,hooks:Pe,shell:p},d=>k.post({__frame_cap_telemetry:d},U))}catch{k.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms",phase:"install"}},U),Le=Lt(h,U,p)}else Le=Lt(h,U,p);const le=(d,H)=>k.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:d,phase:H}},U),se=d=>k.post({__frame_cap_recovered:{cap:d}},U);A?.buildBoot&&Oe.has(Te??"")&&se("_transforms");const D=Le;B.forEach((d,H)=>{const[X,G]=I[H];if(d.status!=="fulfilled"){le(X);return}Oe.has(G)&&se(X);try{d.value?.install?.(D)}catch{le(X,"install")}}),Je(),await w,await ge(),ve();const Z=Ut(J,$);k.post(Z?{__frame_ready:!0,nav:Z}:{__frame_ready:!0},F),t.then(d=>d?.installSizeReporter?.(U,we,p));let be=!1;try{be=M()}catch{}me&&be?ae(me).then(d=>d?.boot?.({shellOrigin:s,build:D.flags.has(Ir),hot:m?.hot??null,carried:m?.carried(),presented:()=>m?.presented()??!0})).catch(()=>!1).then(d=>{m?.hydrated(),d!==!0?le("_ldx"):Oe.has(me)&&se("_ldx")}):m?.hydrated()})}else We&&(jt(),Wr(We,Rt,ae,{settle:Je,mount:Ze}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>The 80 Deals Briefing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./css2">
+<style>
+:root{
+  --bg:#F5F7F9; --surface:#FFFFFF; --surface-2:#EBEFF3; --surface-3:#E2E8EE;
+  --ink:#14181E; --ink-2:#56606C; --ink-3:#7C8794;
+  --rule:#D6DDE4; --rule-strong:#B9C4CE;
+  --accent:#26408F; --accent-soft:#E6EAF6;
+  --easy:#1E7A54; --easy-soft:#E2F1EA;
+  --med:#A9660F; --med-soft:#F7EDDF;
+  --hard:#AC352C; --hard-soft:#F8E5E3;
+  --shadow:0 1px 2px rgba(20,24,30,.05), 0 8px 24px -16px rgba(20,24,30,.25);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1319; --surface:#161C24; --surface-2:#1D242E; --surface-3:#252E39;
+    --ink:#E8EDF3; --ink-2:#9EAAB8; --ink-3:#7A8695;
+    --rule:#28313D; --rule-strong:#3A4653;
+    --accent:#93A8F2; --accent-soft:#1B2436;
+    --easy:#57C495; --easy-soft:#14261F;
+    --med:#E2A755; --med-soft:#2A2118;
+    --hard:#EB8074; --hard-soft:#2C1B19;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1319; --surface:#161C24; --surface-2:#1D242E; --surface-3:#252E39;
+  --ink:#E8EDF3; --ink-2:#9EAAB8; --ink-3:#7A8695;
+  --rule:#28313D; --rule-strong:#3A4653;
+  --accent:#93A8F2; --accent-soft:#1B2436;
+  --easy:#57C495; --easy-soft:#14261F;
+  --med:#E2A755; --med-soft:#2A2118;
+  --hard:#EB8074; --hard-soft:#2C1B19;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:16px; line-height:1.55; margin:0; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px 96px}
+h1,h2,h3,h4{font-family:"Newsreader",Georgia,"Times New Roman",serif; font-weight:500; text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+
+/* masthead */
+.masthead{border-bottom:1px solid var(--rule); padding:44px 0 26px; display:flex; flex-direction:column; gap:16px}
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+h1{font-size:clamp(2.1rem,5vw,3.1rem); line-height:1.08; letter-spacing:-.015em}
+h1 em{font-style:italic; color:var(--accent)}
+.standfirst{font-size:1.05rem; color:var(--ink-2); max-width:62ch}
+.facts{display:grid; grid-template-columns:repeat(auto-fit,minmax(148px,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:3px; margin-top:8px; overflow:hidden}
+.fact{background:var(--surface); padding:12px 14px; display:flex; flex-direction:column; gap:3px}
+.fact dt{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3)}
+.fact dd{margin:0; font-size:.92rem; font-weight:500; font-variant-numeric:tabular-nums}
+
+/* tabs */
+.tabs{position:sticky; top:0; z-index:8; background:var(--bg); display:flex; gap:2px; border-bottom:1px solid var(--rule-strong); padding-top:14px; overflow-x:auto}
+.tab{font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; padding:10px 16px; border:none; background:none; color:var(--ink-3); cursor:pointer; border-bottom:2px solid transparent; white-space:nowrap}
+.tab:hover{color:var(--ink-2)}
+.tab[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+[role="tabpanel"][hidden]{display:none}
+
+section{padding-top:48px}
+.sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:22px; flex-wrap:wrap}
+.sec-head h2{font-size:1.55rem; letter-spacing:-.01em}
+.sec-head .note{font-size:.85rem; color:var(--ink-2); margin-left:auto}
+
+.prose{max-width:66ch; display:flex; flex-direction:column; gap:14px; color:var(--ink-2)}
+.prose strong{color:var(--ink); font-weight:600}
+
+/* dossier */
+.dossier{display:flex; flex-direction:column; gap:22px}
+.dos{background:var(--surface); border:1px solid var(--rule); border-radius:3px; box-shadow:var(--shadow); overflow:hidden}
+.dos.you{border-color:var(--accent)}
+.dos-head{padding:18px 22px 14px; border-bottom:1px solid var(--rule); background:var(--surface-2); display:flex; flex-wrap:wrap; gap:4px 16px; align-items:baseline}
+.dos.you .dos-head{background:var(--accent-soft)}
+.dos-head h3{font-size:1.35rem}
+.dos-head .who{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3); width:100%; line-height:1.5}
+.dos-head .seat{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; padding:3px 8px; border-radius:2px; background:var(--surface-3); color:var(--ink-2)}
+.dos.you .dos-head .seat{background:var(--accent); color:#fff}
+.dos-body{padding:6px 22px 20px}
+.dl{display:grid; grid-template-columns:132px 1fr; gap:0}
+.dl dt{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); padding:13px 14px 13px 0; border-bottom:1px solid var(--rule)}
+.dl dd{margin:0; padding:13px 0; border-bottom:1px solid var(--rule); font-size:.93rem; color:var(--ink-2); min-width:0}
+.dl dd b{color:var(--ink); font-weight:600}
+.dl dd:last-of-type, .dl dt:last-of-type{border-bottom:none}
+.dl ul{margin:0; padding-left:17px; display:flex; flex-direction:column; gap:5px}
+.dl dd.hot{color:var(--ink)}
+.flag{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.06em; text-transform:uppercase; color:var(--hard); background:var(--hard-soft); padding:2px 7px; border-radius:2px; margin-right:6px}
+
+/* people summary cards */
+.people{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px}
+.person{background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:16px 18px; display:flex; flex-direction:column; gap:9px; box-shadow:var(--shadow)}
+.person.you{border-color:var(--accent); background:var(--accent-soft)}
+.person h3{font-size:1.06rem}
+.person .role{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); line-height:1.5}
+.person p{font-size:.9rem; color:var(--ink-2)}
+.person .line{font-size:.9rem; color:var(--ink); border-left:2px solid var(--rule-strong); padding-left:10px}
+.person.you .line{border-left-color:var(--accent)}
+
+/* spine */
+.spine{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:0; border:1px solid var(--rule); border-radius:3px; overflow:hidden; background:var(--rule)}
+.spine > div{background:var(--surface); padding:18px 20px; display:flex; flex-direction:column; gap:8px}
+.spine .num{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--accent); letter-spacing:.1em}
+.spine h4{font-size:1.1rem; line-height:1.25}
+.spine p{font-size:.88rem; color:var(--ink-2)}
+.quotes{display:flex; flex-direction:column; gap:10px; margin-top:22px}
+.quote{font-family:"Newsreader",Georgia,serif; font-size:1.18rem; font-style:italic; line-height:1.4; padding:10px 0 10px 18px; border-left:3px solid var(--accent); color:var(--ink)}
+
+/* controls */
+.controls{position:sticky; top:41px; z-index:5; background:var(--bg); padding:14px 0 12px; border-bottom:1px solid var(--rule); display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:8px}
+.chip{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.05em; text-transform:uppercase; padding:5px 11px; border:1px solid var(--rule-strong); border-radius:999px; background:var(--surface); color:var(--ink-2); cursor:pointer}
+.chip:hover{border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink)}
+.chip.d-easy[aria-pressed="true"]{background:var(--easy); border-color:var(--easy); color:#fff}
+.chip.d-med[aria-pressed="true"]{background:var(--med); border-color:var(--med); color:#fff}
+.chip.d-hard[aria-pressed="true"]{background:var(--hard); border-color:var(--hard); color:#fff}
+.chip:focus-visible, .qsearch:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.qsearch{font-family:inherit; font-size:.86rem; padding:6px 11px; border:1px solid var(--rule-strong); border-radius:999px; background:var(--surface); color:var(--ink); min-width:170px}
+.count{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-3); margin-left:auto; letter-spacing:.05em}
+
+/* questions */
+.qgroup{margin-top:30px}
+.qgroup > h3{font-size:1.18rem; padding-bottom:6px; border-bottom:1px solid var(--rule-strong); margin-bottom:4px; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
+.qgroup > h3 span{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-3); letter-spacing:.08em; font-weight:400}
+.q{display:grid; grid-template-columns:40px 1fr; gap:0 14px; padding:16px 0; border-bottom:1px solid var(--rule); align-items:start}
+.q[hidden]{display:none}
+.qnum{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-3); padding-top:3px; font-variant-numeric:tabular-nums}
+.qbody{display:flex; flex-direction:column; gap:8px; min-width:0}
+.tags{display:flex; flex-wrap:wrap; gap:6px; align-items:center}
+.tag{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; padding:2px 7px; border-radius:2px; background:var(--surface-2); color:var(--ink-2)}
+.tag.easy{background:var(--easy-soft); color:var(--easy)}
+.tag.med{background:var(--med-soft); color:var(--med)}
+.tag.hard{background:var(--hard-soft); color:var(--hard)}
+.qtext{font-family:"Newsreader",Georgia,serif; font-size:1.16rem; line-height:1.35; color:var(--ink)}
+.ans{font-size:.94rem; color:var(--ink-2); border-left:2px solid var(--rule-strong); padding-left:12px}
+.ans b{color:var(--ink); font-weight:600}
+.warn{font-size:.88rem; background:var(--hard-soft); color:var(--ink); border-left:2px solid var(--hard); padding:8px 12px; border-radius:0 2px 2px 0}
+.warn b{color:var(--hard)}
+
+/* misc */
+.tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:3px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:520px; font-size:.9rem}
+th,td{text-align:left; padding:11px 14px; border-bottom:1px solid var(--rule); vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); font-weight:500; background:var(--surface-2)}
+tr:last-child td{border-bottom:none}
+td:first-child{font-weight:600; color:var(--ink); white-space:nowrap}
+.stack{display:flex; flex-direction:column; gap:10px}
+.item{background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:13px 16px; display:flex; gap:14px; align-items:baseline; flex-wrap:wrap}
+.item .lbl{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); min-width:88px; flex-shrink:0}
+.item p{font-size:.93rem; color:var(--ink-2); flex:1; min-width:200px}
+.item p b{color:var(--ink)}
+.nogo{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:10px}
+.nogo div{background:var(--hard-soft); border:1px solid var(--hard); border-radius:3px; padding:12px 14px; font-size:.9rem; color:var(--ink)}
+.nogo div b{display:block; color:var(--hard); font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:4px; font-weight:500}
+.checklist{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; border:1px solid var(--rule); border-radius:3px; background:var(--surface)}
+.checklist li{padding:11px 16px; border-bottom:1px solid var(--rule); font-size:.93rem; color:var(--ink-2); display:flex; gap:12px}
+.checklist li:last-child{border-bottom:none}
+.checklist li::before{content:"\25A1"; color:var(--ink-3); font-size:1.05rem; line-height:1.3}
+.checklist li b{color:var(--ink)}
+footer{margin-top:64px; padding-top:20px; border-top:1px solid var(--rule); font-size:.82rem; color:var(--ink-3); display:flex; flex-direction:column; gap:8px}
+footer a{color:var(--ink-2)}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+@media (max-width:620px){
+  .dl{grid-template-columns:1fr; gap:0}
+  .dl dt{padding:12px 0 2px; border-bottom:none}
+  .dl dd{padding:0 0 12px}
+}
+@media (max-width:560px){
+  .q{grid-template-columns:1fr}
+  .qnum{display:none}
+  .controls{position:static}
+  .tabs{position:static}
+}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker">Roundtable 4 · Club Room · Thu 24 Sep 2026 · 15.05–15.50</div>
+  <h1>Around the world in <em>80 deals</em></h1>
+  <p class="standfirst">Speaker prep for Aseem Gupta, Markets Treasury, HSBC. Six speakers, forty-five minutes, one moderator who writes provocative session titles for a living. You are the only buyer in the room — that is both your advantage and the reason the hardest questions come to you.</p>
+  <dl class="facts">
+    <div class="fact"><dt>Your airtime</dt><dd>~6–7 min</dd></div>
+    <div class="fact"><dt>Answers to prep</dt><dd>8–10</dd></div>
+    <div class="fact"><dt>Target length</dt><dd>45–60 sec</dd></div>
+    <div class="fact"><dt>Moderator</dt><dd>R. Kemmish</dd></div>
+    <div class="fact"><dt>Co-panellists</dt><dd>5</dd></div>
+    <div class="fact"><dt>Buy-side voices</dt><dd>1 (you)</dd></div>
+  </dl>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Briefing sections">
+  <button class="tab" role="tab" id="t-brief" aria-controls="p-brief" aria-selected="true">The brief</button>
+  <button class="tab" role="tab" id="t-room" aria-controls="p-room" aria-selected="false">The room</button>
+  <button class="tab" role="tab" id="t-q" aria-controls="p-q" aria-selected="false">60 questions</button>
+  <button class="tab" role="tab" id="t-guard" aria-controls="p-guard" aria-selected="false">Guardrails</button>
+</div>
+
+<!-- ================= TAB 1: BRIEF ================= -->
+<div role="tabpanel" id="p-brief" aria-labelledby="t-brief">
+
+<section>
+  <div class="sec-head"><h2>Reading the room</h2><span class="note">The structural gap you fill</span></div>
+  <div class="prose" style="margin-bottom:22px">
+    <p><strong>The moderator sets the tone of the whole congress.</strong> Richard Kemmish moderates six of this event's sessions. Read his session titles for his method: <em>"Always good in a crisis?"</em>, <em>"Are covered bonds too safe?"</em>, <em>"The silent stockpile… how worried should I be?"</em> He is wry, mildly contrarian, allergic to corporate readouts, and he moderates by finding the person who can be made to disagree with everyone else. On a panel of structurers, issuers and a development bank, that person is <strong>you</strong>. Expect a fast round-the-table opener, then a targeted challenge in your direction around minute twelve.</p>
+    <p><strong>Five of six panellists sit on the supply side.</strong> A structurer, two issuers building or scaling programmes, a values-led bank, and a development bank that helps markets exist. Nobody else has to own the paper afterwards. Every abstract question on this panel has a concrete version only you can answer: <em>does it clear, and would you still hold it in year three?</em></p>
+  </div>
+  <div class="people">
+    <div class="person you">
+      <div class="role">You · Portfolio Manager, Markets Treasury</div>
+      <h3>Aseem Gupta, HSBC</h3>
+      <p>Multi-currency HQLA portfolios investing the bank's commercial surplus. ~20 years across London and India.</p>
+      <p class="line">The rules-bound, long-horizon buyer every debut issuer is secretly designing for and rarely talks to.</p>
+    </div>
+    <div class="person">
+      <div class="role">MD, Structuring &amp; Advisory</div>
+      <h3>Elena Bortolotti, Natixis</h3>
+      <p>Veteran covered bond structurer, ex-Barclays. Advises on programme design and new frameworks.</p>
+      <p class="line">Owns legal structure and rating mechanics. Defer, then add the buyer's consequence.</p>
+    </div>
+    <div class="person">
+      <div class="role">Chief Executive Officer</div>
+      <h3>Murodjon Farmanov, UzMRC</h3>
+      <p>Uzbekistan's state-created mortgage refinancing company. Local-currency issuer, Fitch BB / Positive.</p>
+      <p class="line">The frontier case study beside you. Be generous in public, precise about criteria, never grade the country.</p>
+    </div>
+    <div class="person">
+      <div class="role">Regional Policy Partnerships · Local Currency &amp; Capital Markets</div>
+      <h3>Rada Tomova, EBRD</h3>
+      <p>EBRD has invested ~€650m in covered bonds across its regions and drafts frameworks for governments.</p>
+      <p class="line">Natural ally, and Kemmish's co-author network. An anchor buys time, not conviction — say it kindly.</p>
+    </div>
+    <div class="person">
+      <div class="role">Chief Financial Officer</div>
+      <h3>Kees van Kalveen, Triodos Bank</h3>
+      <p>€17.7bn Dutch values-based bank. Established covered bond programme; wants to be a regular issuer.</p>
+      <p class="line">Owns the ESG ground. Your contribution: whether green widens the buyer list or narrows it.</p>
+    </div>
+    <div class="person">
+      <div class="role">SVP &amp; Treasurer</div>
+      <h3>Peter Walker, Fairstone Bank of Canada</h3>
+      <p>Non-Big-Six Canadian bank funded by deposit notes and card securitisation. Canada's framework sits behind him.</p>
+      <p class="line">Your bridge to reciprocity and Panel V. Tee him up and you both look good.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Where you add value</h2><span class="note">Play here. Not elsewhere.</span></div>
+  <div class="stack">
+    <div class="item"><span class="lbl">Own it</span><p><b>The clearing test.</b> "Does this deal get bought, by whom, and when does the buyer list get long enough to price it tightly?" You are the only person who can answer without speculating.</p></div>
+    <div class="item"><span class="lbl">Own it</span><p><b>The buyer's rulebook.</b> Liquid-asset classification, risk weight, central-bank repo eligibility, index inclusion. New jurisdictions optimise the <i>law</i> and under-invest in the <i>eligibility chain</i> that actually sets the bid.</p></div>
+    <div class="item"><span class="lbl">Own it</span><p><b>Currency as investor base.</b> EUR vs USD vs GBP is not a cost comparison, it's a choice of which rulebook and which buyer you want. You hold all three.</p></div>
+    <div class="item"><span class="lbl">Own it</span><p><b>Holding, not trading.</b> Liquidity portfolios buy to hold through a cycle, which makes you the honest witness on what "liquidity" is really worth in bp.</p></div>
+    <div class="item"><span class="lbl">Lean in</span><p><b>Non-European perspective.</b> Two decades across London and India lets you talk about why markets fail to develop without sounding like a European lecturing a frontier issuer.</p></div>
+    <div class="item"><span class="lbl">Lean in</span><p><b>Macro framing.</b> Relative value across covered, SSA and govvies is a Markets Treasury daily question and the through-line of Panels I, V and VI.</p></div>
+    <div class="item"><span class="lbl">Stay out</span><p><b>Rating methodology detail</b> (four agencies have their own sessions here), <b>legal drafting</b>, <b>ESG doctrine</b>, <b>sovereign politics</b>, and anything that sounds like grading a fellow panellist's country.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Message spine</h2><span class="note">Four things. Everything routes back to one.</span></div>
+  <div class="spine">
+    <div><span class="num">01</span><h4>A debut is an eligibility event, not a funding event</h4><p>No liquidity book buys a first deal on its merits. They buy the expectation of a curve, a repeat calendar and index inclusion. Build for the tenth deal.</p></div>
+    <div><span class="num">02</span><h4>The plumbing is the price</h4><p>Liquid-asset treatment, risk weight, repo and index eligibility are a chain, not a menu. The weakest link sets the clearing spread — usually by more than extra overcollateralisation would.</p></div>
+    <div><span class="num">03</span><h4>Liquidity is a promise, not a feature</h4><p>A new or small programme gets bought on the assumption it can be sold. Consistent size, a committed secondary and predictable timing beat most structural enhancements.</p></div>
+    <div><span class="num">04</span><h4>Diversification has a price, and it is payable</h4><p>Investors will pay to learn a new name — in analyst time, not just spread. The issuer pays in transparency, consistency and access. That trade is available to anyone willing to make it.</p></div>
+  </div>
+  <div class="quotes">
+    <p class="quote">"I don't buy the debut. I buy the curve the debut promises."</p>
+    <p class="quote">"Every new jurisdiction writes a beautiful law and then forgets the buyer's rulebook."</p>
+    <p class="quote">"The first deal is marketing. The third deal is a market."</p>
+    <p class="quote">"I can price credit risk. I can't price surprise — which is why reporting beats structure."</p>
+    <p class="quote">"Eighty deals is the easy part. Eighty issuers who come back next year is the hard part."</p>
+  </div>
+</section>
+</div>
+
+<!-- ================= TAB 2: THE ROOM ================= -->
+<div role="tabpanel" id="p-room" aria-labelledby="t-room" hidden="">
+<section>
+  <div class="sec-head"><h2>The room</h2><span class="note">Public sources only · verify before the day</span></div>
+  <div class="prose" style="margin-bottom:26px">
+    <p>Everything below is drawn from publicly available material: the congress site, company disclosures, results releases, rating announcements, the ECBC/EMF's own publications and trade press. Nothing here is confidential and nothing draws on HSBC information. Where something is an <strong>inference</strong> rather than a stated fact, it is labelled as one — treat those as prompts to ask, not as facts to assert on stage.</p>
+  </div>
+
+  <div class="dossier">
+
+  <!-- KEMMISH -->
+  <article class="dos">
+    <div class="dos-head">
+      <span class="who">Moderator</span>
+      <h3>Richard Kemmish</h3>
+      <span class="seat">Sets the tone</span>
+    </div>
+    <div class="dos-body"><dl class="dl">
+      <dt>Role</dt><dd>Editorial Consultant, Fixed Income Events, FT Live. Also principal of Richard Kemmish Consulting Ltd.</dd>
+      <dt>Background</dt><dd>Former <b>head of covered bonds at Credit Suisse</b>; went independent around 2014 and has since worked as a consultant, trainer and commentator. Teaches covered bonds on Euromoney Learning / Finance Unlocked. Writes guest comment for the trade press — including a piece arguing that <b>covered bond encumbrance "is not so bad"</b>, i.e. defending the product against its most common prudential critique.</dd>
+      <dt>Footprint here</dt><dd class="hot">He moderates <b>six sessions</b> at this congress: the ECBC welcome interview, Panel I (crisis resilience), Roundtable 2 (regulatory update), your Roundtable 4, Panel V (non-euro covered bonds) and Panel VI (relative value). He is effectively the editorial voice of the event, and he will have heard the day's other arguments before he gets to you.</dd>
+      <dt>Known leanings</dt><dd><ul>
+        <li><b>Pro market-development.</b> He has co-authored ECBC/EMF material on EBRD's role in CEE covered bonds alongside EBRD staff — so he is personally invested in the "new markets can work" thesis and is likely to be impatient with reasons why they can't.</li>
+        <li><b>Defends the product</b> against the encumbrance and complexity critiques, but dislikes complacency inside the market.</li>
+        <li><b>Provocation as method.</b> His session titles are questions with an edge. He is looking for disagreement and a quotable line, not a consensus.</li>
+      </ul></dd>
+      <dt>How he'll run it</dt><dd>Fast round-the-table opener (25–30 seconds each), then targeted follow-ups, then audience questions in the last ten minutes. In a Club Room roundtable he will be closer and more conversational than on the main stage, which makes interruption easier and answers shorter.</dd>
+      <dt>How to play him</dt><dd class="hot">Give him one line worth quoting, early. Disagree with someone politely and explicitly — he will come back to you for more. Never give a corporate non-answer; he will notice and he will ask again. If you don't want a question, the reliable move is to <b>email him a week out</b> with two questions you would love and one you'd rather he put to someone else.</dd>
+      <dt>Do not</dt><dd><span class="flag">Care</span>Take his provocation as licence. A question phrased as a joke still gets written up as a quote from an HSBC portfolio manager.</dd>
+    </dl></div>
+  </article>
+
+  <!-- BORTOLOTTI -->
+  <article class="dos">
+    <div class="dos-head">
+      <span class="who">Managing Director, Structuring and Advisory · Natixis CIB</span>
+      <h3>Elena Bortolotti</h3>
+      <span class="seat">The structurer</span>
+    </div>
+    <div class="dos-body"><dl class="dl">
+      <dt>Background</dt><dd>One of the market's long-standing covered bond structurers. Spent many years at <b>Barclays</b> in covered bond structuring before joining <b>Natixis CIB</b> as part of a sequence of senior hires as the bank broadened its DCM business. Regularly appears on new-programme and methodology panels — including rating-agency sessions on launching a covered bond programme.</dd>
+      <dt>Her firm</dt><dd>Natixis runs one of the deepest covered bond franchises in Europe and has a second presence at this congress: Workshop B on French covered bonds amid political risk and rating sensitivity.</dd>
+      <dt>Likely position</dt><dd><ul>
+        <li>Structuring problems are solvable; the binding constraints are the <b>legal framework and the insolvency regime</b>, not the documentation.</li>
+        <li>New issuers should engage advisers and agencies <b>early</b> — most debut delays are self-inflicted sequencing errors.</li>
+        <li>Likely sympathetic to structural tools (soft bullet, extendable maturities, pre-maturity tests) as the way to bridge a weaker jurisdiction to a strong rating.</li>
+      </ul></dd>
+      <dt>Where you differ</dt><dd class="hot">This is your best available <b>polite disagreement</b>. She optimises the instrument; you can argue that beyond a point, structural enhancement has diminishing returns compared with the eligibility chain and a credible repeat calendar — and that some structures which win a rating (conditional pass-through in particular) narrow the buyer base a debut issuer most needs. Frame it as "a structurer's solution and an investor's problem are not always the same object," and give her the credit for the structure working.</dd>
+      <dt>Ask her</dt><dd>"What do first-time issuers argue with you about that they should simply accept?"</dd>
+      <dt>Do not</dt><dd><span class="flag">Care</span>She is a competitor's banker. Nothing that reads as a comparison between houses.</dd>
+    </dl></div>
+  </article>
+
+  <!-- FARMANOV -->
+  <article class="dos">
+    <div class="dos-head">
+      <span class="who">Chief Executive Officer · Mortgage Refinancing Company of Uzbekistan (UzMRC)</span>
+      <h3>Murodjon Farmanov</h3>
+      <span class="seat">The frontier issuer</span>
+    </div>
+    <div class="dos-body"><dl class="dl">
+      <dt>The institution</dt><dd>UzMRC was created by <b>Presidential Decree PF-5715 of 13 May 2019</b>, "on additional measures to develop and expand the mortgage lending market". It refinances long-term mortgage loans originated by commercial banks, with the stated aim of ensuring mortgage market liquidity and affordable rates for households. Partner banks include NBU, Asaka Bank, Hamkorbank and Turon Bank.</dd>
+      <dt>Scale &amp; funding</dt><dd>Publicly reported: over <b>UZS 4.5 trillion refinanced</b> since inception and over <b>UZS 590bn of bonds issued</b>, including a UZS 300bn placement in April 2026 and a reported ~$24.6m-equivalent exchange placement in March 2026. Local-currency coupons have been high — an outstanding 2027 UZS bond carries a 19% coupon, which is the single most important number for understanding what a covered bond would be <i>for</i> here.</dd>
+      <dt>Rating</dt><dd><b>Fitch assigned a Long-Term IDR of 'BB'</b> (foreign and local currency) with a <b>Positive Outlook</b> in July 2026. Development partners include the ADB; UzMRC is a member of the Asian secondary mortgage market association network — the same family as ISMMA, which also appears on Panel II of this congress.</dd>
+      <dt>The model</dt><dd>A liquidity-facility / secondary mortgage market institution — structurally the same family as <b>Cagamas (Malaysia), KHFC (Korea), JHF (Japan)</b> and, in a different form, Canada Mortgage Bonds. It solves aggregation and standardisation before it solves funding. Note KHFC is separately represented at this congress on Roundtable 1.</dd>
+      <dt>Likely position</dt><dd><ul>
+        <li>Covered bonds are the logical next step once an aggregator exists and the mortgage book is standardised.</li>
+        <li>What he needs from the room is <b>recognition</b> — investors willing to look, and a framework path that international buyers accept.</li>
+        <li>He is likely to be the most optimistic person on the panel, and the one with most at stake in how you answer.</li>
+      </ul></dd>
+      <dt>Your role</dt><dd class="hot">Be the buyer who describes the <b>path</b> without grading the country. Your strongest and safest contribution: local-currency market first, hard currency later; the aggregator model is the right first institution; and the test of success is whether it makes itself less necessary over a decade. Being generous and specific to him is also the best insurance against the question you don't want.</dd>
+      <dt>Do not</dt><dd><span class="flag">High risk</span>Do not answer "would you buy Uzbekistan?" with a yes, a no, or a spread. Do not comment on Uzbek politics, governance, sanctions exposure, or the sovereign. See Q09 and Q54.</dd>
+    </dl></div>
+  </article>
+
+  <!-- TOMOVA -->
+  <article class="dos">
+    <div class="dos-head">
+      <span class="who">Head of Regional Policy Partnerships; Principal, Local Currency and Capital Markets Development · EBRD</span>
+      <h3>Rada Tomova</h3>
+      <span class="seat">The market builder</span>
+    </div>
+    <div class="dos-body"><dl class="dl">
+      <dt>Her mandate</dt><dd>EBRD's Local Currency and Capital Markets Development function: legal and regulatory diagnostics, concept papers benchmarked against EU best practice, engagement with national authorities, and anchor investment to get first transactions done. The Bank frames covered bonds as a fix for funding gaps in banking sectors dominated by foreign parents, and as a source of stable long-term mortgage funding.</dd>
+      <dt>Track record</dt><dd>Publicly documented by the ECBC: roughly <b>€650m invested in covered bonds</b> across EBRD's regions, including <ul>
+        <li><b>Poland</b> — over €115m in PKO Bank Hipoteczny (PLN and EUR), including €11.7m of its first green covered bond in June 2019</li>
+        <li><b>Romania</b> — €40m of Alpha Bank's €200m inaugural, May 2019</li>
+        <li><b>Slovakia</b> — two frameworks totalling €585m</li>
+        <li><b>Türkiye</b> — €75m in Garanti (2017) and €50m of VakifBank's €500m benchmark (2016)</li>
+        <li><b>Greece</b> — €30m of National Bank of Greece's €750m (2017)</li>
+      </ul></dd>
+      <dt>Stated view</dt><dd>EBRD's published position stresses that framework reform only works with "involvement and buy-in from all relevant parties", and that CEE/SEE markets were materially smaller than Western Europe before this engagement. The local-currency agenda is central: building domestic long-term funding curves rather than exporting FX risk into mortgage books.</dd>
+      <dt>Congress note</dt><dd class="hot">The moderator has co-authored ECBC material on EBRD's covered bond work with EBRD staff. He knows this agenda well and is sympathetic to it — which means scepticism about market-building will land badly unless it is framed as "here is how it works better".</dd>
+      <dt>Where you agree</dt><dd>Strongly, and say so: local currency first; money spent on framework, data and standards outlasts money spent on an order book. That alignment is genuine and worth stating out loud — it is also the polite way to make the point that an anchor buys time rather than conviction.</dd>
+      <dt>Ask her</dt><dd>"Where does EBRD's euro actually go furthest — the framework, the data, or the order book?"</dd>
+    </dl></div>
+  </article>
+
+  <!-- VAN KALVEEN -->
+  <article class="dos">
+    <div class="dos-head">
+      <span class="who">Chief Financial Officer and Executive Board member · Triodos Bank N.V.</span>
+      <h3>Kees van Kalveen</h3>
+      <span class="seat">The small scaling issuer</span>
+    </div>
+    <div class="dos-body"><dl class="dl">
+      <dt>Background</dt><dd>Nominated as CFO in 2022 and appointed to the Executive Board in 2023. Triodos is a Dutch values-based bank — sustainability is the franchise, not a bolt-on.</dd>
+      <dt>H1 2026 numbers</dt><dd>Total assets <b>€17.7bn</b>; loan book <b>€11.8bn</b>; customer deposits <b>€15.0bn</b>; CET1 <b>17.3%</b> against a &gt;15% internal target. Dutch residential mortgages grew €258m to <b>€5.1bn — now half the total loan book</b>, with production up 44% to €479m. Net interest income €174.8m, +6% y/y.</dd>
+      <dt>Funding &amp; the covered bond</dt><dd class="hot">Management has confirmed an <b>established covered bond programme</b> supporting funding diversification, with the stated intention of becoming a <b>regular issuer subject to market conditions</b>. Also issued <b>€250m of Green Tier 2 Notes</b>. He is therefore not an aspiring issuer — he is a small, deposit-rich issuer trying to earn a place on the calendar, which is a different and more interesting problem.</dd>
+      <dt>The collateral story</dt><dd><b>63% of homes financed by Triodos carry an energy label of A or higher.</b> This is the single most useful fact about him for your purposes: it is a genuine collateral-quality statistic, not a marketing claim, and it lets you make the ESG-as-credit argument using his own numbers rather than a doctrine.</dd>
+      <dt>Also on his plate</dt><dd>A "Fit for Impact" transformation targeting €25–30m of annual cost savings by 2028 and a 70–75% cost/income ratio. Expect cost discipline to shape how he talks about the price of running a programme.</dd>
+      <dt>Likely position</dt><dd>Covered bonds as diversification rather than necessity for a deposit-funded bank; the fixed cost of a programme is real for a bank this size; green credentials as a way to be found by investors who would otherwise never screen him.</dd>
+      <dt>Where you add</dt><dd>Tell him honestly what a small, infrequent issuer must do to matter to a liquidity buyer — predictability over size — and validate the EPC-A pool as a credit story. Let him own the values argument; you own the mechanics.</dd>
+    </dl></div>
+  </article>
+
+  <!-- WALKER -->
+  <article class="dos">
+    <div class="dos-head">
+      <span class="who">Senior Vice President and Treasurer · Fairstone Bank of Canada</span>
+      <h3>Peter Walker</h3>
+      <span class="seat">The mature-market outsider</span>
+    </div>
+    <div class="dos-body"><dl class="dl">
+      <dt>The bank</dt><dd>A <b>non-Big-Six Canadian bank</b>. Fairstone Bank emerged from Duo Bank of Canada's 2020 acquisition of Fairstone Financial; the group's business is consumer lending and credit cards rather than a large prime mortgage book.</dd>
+      <dt>Public funding activity</dt><dd>Wholesale <b>deposit note offerings</b> (C$400m and C$500m transactions publicly announced) and <b>credit card securitisation</b> through Canvas Cards Trust, including a C$300m Series 2026-1. That is a diversified but relatively expensive funding mix for a bank of its size.</dd>
+      <dt>The Canadian backdrop</dt><dd>Canada's legislative covered bond framework runs through a <b>CMHC registry of registered issuers</b>, with uninsured mortgage collateral and a supervisory cap on issuance as a share of assets. It is one of the most-cited third-country frameworks in the equivalence debate, and Canada's treatment of EU covered bonds is a live reciprocity question. CMHC's CEO speaks on Panel II of this congress; CIBC and Fairstone both appear on the non-euro side.</dd>
+      <dt>Inference, not fact</dt><dd class="hot"><span class="flag">Verify</span>No public covered bond programme for Fairstone Bank surfaced in this research. Treat him as the <b>prospective-issuer and smaller-bank-access</b> voice rather than an established covered bond issuer. Check the congress bio and any recent announcement before the day, and if in doubt <b>ask him</b> rather than assert — getting this wrong in front of him is an unforced error.</dd>
+      <dt>Likely position</dt><dd>Access and economics for smaller banks: what it costs to build a programme, whether the framework is proportionate for a bank outside the Big Six, and how covered bonds compare with securitisation and deposit notes for a lender whose collateral isn't a classic prime mortgage pool.</dd>
+      <dt>Where you add</dt><dd>The mirror of Triodos: small-issuer-in-a-big-market economics. And he is your <b>best bridge to reciprocity</b> — Canadian issuers are among the clearest beneficiaries of an EU equivalence regime, which lets you tee up Panel V without duplicating it.</dd>
+      <dt>Ask him</dt><dd>"Outside the Big Six in a mature market — does the framework help you, or does it just make you comparable to people much larger than you?"</dd>
+    </dl></div>
+  </article>
+
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Panel dynamics at a glance</h2><span class="note">Who to align with, who to differ from</span></div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Person</th><th>Their frame</th><th>Your move</th></tr></thead>
+      <tbody>
+        <tr><td>Kemmish</td><td>Provocation; pro market-development; wants disagreement</td><td>Give one quotable line early. Disagree with someone by name.</td></tr>
+        <tr><td>Bortolotti</td><td>Structure solves it</td><td>Polite differ: structure has diminishing returns vs eligibility and calendar.</td></tr>
+        <tr><td>Farmanov</td><td>Frontier optimism; wants recognition</td><td>Describe the path, never grade the country. Be generous and specific.</td></tr>
+        <tr><td>Tomova</td><td>Frameworks, local currency, anchor investment</td><td>Align openly. "Build the road, don't pay for the taxi."</td></tr>
+        <tr><td>Van Kalveen</td><td>Small bank, green collateral, cost discipline</td><td>Validate the EPC data as credit. Predictability over size.</td></tr>
+        <tr><td>Walker</td><td>Small-bank access in a mature market</td><td>Mirror to Triodos; bridge to reciprocity and Panel V.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</div>
+
+<!-- ================= TAB 3: QUESTIONS ================= -->
+<div role="tabpanel" id="p-q" aria-labelledby="t-q" hidden="">
+<section>
+  <div class="sec-head"><h2>The question bank</h2><span class="note">60 questions · filter by difficulty or theme</span></div>
+  <div class="controls" role="group" aria-label="Filter questions">
+    <button class="chip d-easy" data-f="d" data-v="easy" aria-pressed="false">Easy</button>
+    <button class="chip d-med" data-f="d" data-v="med" aria-pressed="false">Medium</button>
+    <button class="chip d-hard" data-f="d" data-v="hard" aria-pressed="false">Hard</button>
+    <button class="chip" data-f="t" data-v="investor" aria-pressed="false">Investor lens</button>
+    <button class="chip" data-f="t" data-v="reg" aria-pressed="false">Structure &amp; reg</button>
+    <button class="chip" data-f="t" data-v="debut" aria-pressed="false">Debut mechanics</button>
+    <button class="chip" data-f="t" data-v="esg" aria-pressed="false">ESG</button>
+    <button class="chip" data-f="t" data-v="cross" aria-pressed="false">Cross-border</button>
+    <button class="chip" data-f="t" data-v="risk" aria-pressed="false">Reputational risk</button>
+    <input class="qsearch" type="search" placeholder="Search questions…" aria-label="Search questions">
+    <span class="count" id="count">60 shown</span>
+  </div>
+
+  <div class="qgroup">
+    <h3>A. The opener <span>Kemmish goes round the table fast — have 25 seconds ready</span></h3>
+
+    <div class="q" data-d="easy" data-t="investor">
+      <div class="qnum">01</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Why covered bonds — and why now?</p>
+      <p class="ans"><b>Buyer's inversion of the panel title.</b> The constraint on a bank liquidity portfolio in 2026 isn't yield, it's <i>eligible</i> supply. Covered bonds are one of very few asset classes that are simultaneously high-quality liquid, low risk weight, repo-eligible and genuinely diversifiable across ~30 jurisdictions. Every new market is one more line I'm allowed to own. Hook: "which is why I care more about who issues next year than who issued last week."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="easy" data-t="investor">
+      <div class="qnum">02</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">What does Markets Treasury actually do, and why should a debut issuer in this room care about you?</p>
+      <p class="ans">Describe the <b>function generically</b>: investing a bank's commercial surplus in high-quality liquid assets across currencies, held through a cycle rather than traded. Why it matters to them: this buyer type is large, repeatable and rules-driven — the closest thing to a structural bid a new programme can build toward. No sizes, no numbers, no book detail.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="easy" data-t="cross">
+      <div class="qnum">03</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">Has the investable universe genuinely widened in five years, or does it just feel that way at conferences?</p>
+      <p class="ans">Both — separate them. <b>Genuinely wider:</b> CEE supply grew roughly 94% year-on-year in H1 2026, harmonisation gave a common vocabulary, non-EEA frameworks matured. <b>Feels wider:</b> much new-jurisdiction paper still isn't eligible in the ways that turn interest into ownership. "The map has more countries on it than my portfolio does, and closing that gap is what this panel is actually about."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor risk">
+      <div class="qnum">04</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">What's on your "would like to, but can't yet" list?</p>
+      <div class="warn"><b>Trap:</b> naming countries you won't buy makes a headline and an angry email. Answer in <b>criteria</b>, never names.</div>
+      <p class="ans">"I'd rather give you the test than the list." Four gates: a bankruptcy-remote framework that has been tested or at least stress-argued; a rating outcome that survives the sovereign; an eligibility profile a bank book can use; a plausible repeat calendar. "Any market that clears those is on my list. Any market that doesn't, I can admire but not own."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">05</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Give me one thing this market gets wrong about investors.</p>
+      <p class="ans">That the negotiation is about spread. For a first-time name the binding constraint is usually <b>onboarding cost</b> — credit lines, country limits, legal review, ops set-up, index treatment. Fixed cost against an uncertain calendar. Issuers can lower it far more cheaply than they can pay for it in bp.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>B. The investor lens <span>Home ground — most of your airtime lives here</span></h3>
+
+    <div class="q" data-d="easy" data-t="investor">
+      <div class="qnum">06</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">What do you look at first on a debut covered bond from a new jurisdiction?</p>
+      <p class="ans">Give an ordered list — ordered lists survive editing into a write-up. (1) Can I hold it: liquid-asset classification, risk weight, repo and index eligibility. (2) What happens on issuer default: segregation, administrator powers, liquidity buffer, extendable maturity. (3) Rating linkage to sovereign and issuer. (4) Pool data quality and reporting cadence. (5) Who else is in the book — a book of one is not a market.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">07</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Rank them: legal framework, sovereign rating, issuer credit, secondary liquidity, index inclusion.</p>
+      <p class="ans">Refuse the ranking, give a better structure: they aren't ranked, they're <b>sequential gates</b>. Framework and eligibility are binary. Sovereign and issuer set the <i>range</i>. Liquidity and index set where you sit <i>inside</i> it. "Most debut discussions spend 80% of the time on the third question and 20% on the first."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="investor risk">
+      <div class="qnum">08</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Investor lens</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">How much extra does a new name have to pay? Give me a number.</p>
+      <div class="warn"><b>Hard no on a number.</b> Any figure becomes an HSBC price-talk quote in someone's write-up.</div>
+      <p class="ans">"I'll give you the shape rather than the number, because the number depends on things neither of us knows yet." The new-jurisdiction premium is mostly a <b>liquidity and operational</b> premium, not a credit premium — which is why it decays with the second and third transaction rather than with a rating upgrade. Public anchor if you want one: non-EEA covered bonds have persistently traded wider than EEA paper, and published estimates of the compression from an equivalence regime have been mid-single-digit bp. Attribute to research, never to your book.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="investor risk">
+      <div class="qnum">09</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Investor lens</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Would you buy Uzbekistan? <span style="color:var(--ink-3)">— asked with the CEO of UzMRC beside you</span></p>
+      <div class="warn"><b>The single most dangerous question on this panel.</b> "Yes" is a commitment you can't make. "No" is a headline and a discourtesy. Answer the <b>class</b>, not the country.</div>
+      <p class="ans">"Whether I <i>can</i> buy something and whether it's <i>good</i> are different questions, and only the first is mine to answer on a stage." Then: my constraint set is entirely public — liquid-asset classification, risk weight, repo eligibility, index. Any market that solves those gets a look; the ones that don't, I follow rather than own. Close generously and specifically: "and the interesting thing about the mortgage refinancing company model — Uzbekistan, Korea, Malaysia, Japan — is that it solves the aggregation problem before the funding problem, which is the right order." Warm, useful, non-committal.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">10</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">What kills a deal for you after you've already said yes in principle?</p>
+      <p class="ans">Three killers, in order: a <b>late change</b> to structure or documentation; a <b>reporting gap</b> against what was promised; and a <b>size too small to be index-eligible</b> once the book shrinks. "None of those are credit events. All of them are surprise, and surprise is the one thing I genuinely can't price."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor reg">
+      <div class="qnum">11</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">Is a covered bond from a frontier market really a covered bond, or a secured bank bond in a costume?</p>
+      <p class="ans">Kemmish-bait — enjoy it, then be rigorous. The label earns its keep if three things hold: assets genuinely segregated on issuer insolvency; someone with authority and liquidity to keep paying after default; investor keeps dual recourse. If they hold, the name is earned regardless of geography. If not, using the label damages the asset class more than it helps the issuer — "and that's the market's problem to police, not the investor's."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">12</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Can a covered bond meaningfully out-rate its sovereign — and do you believe it when it does?</p>
+      <p class="ans">Methodologies allow uplift within limits; that's the agencies' territory, defer to it. The buyer's version: uplift is worth something only if the <i>reason</i> for it survives the scenario that stressed the sovereign in the first place. Currency, payment systems and an administrator's practical ability to operate during sovereign stress all sit outside the rating. "I underwrite the mechanism, not the notch."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="easy" data-t="investor debut">
+      <div class="qnum">13</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Investor lens</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">What's a minimum viable programme — size, tenor, frequency — before you'd onboard the name?</p>
+      <p class="ans">Frame in the market's <b>public conventions</b>, not your limits: benchmark size thresholds and rating floors are index rules anyone can read; tenor should sit where the curve already has liquidity, not where the issuer's ALM would prefer; frequency matters most — "one deal a year that always happens beats two that sometimes do." Say explicitly you're describing convention, not an internal threshold.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">14</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Does harmonised transparency reporting change anything, or is it compliance theatre?</p>
+      <p class="ans">Be specific to be credible: the value isn't that anyone reads every field, it's that a new name becomes <b>comparable without a bespoke project</b>. It converts a research question into a screening question — exactly the onboarding cost from Q05. "Standardisation doesn't win you the trade. It gets you into the comparison, and you can't win a comparison you're not in."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="investor risk">
+      <div class="qnum">15</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Investor lens</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Be honest — do investors do credit work on covered bonds, or just buy the label and the risk weight?</p>
+      <div class="warn">Designed to make you defensive or indiscreet. Be candid about the market, precise about your own discipline, and don't disparage other investors.</div>
+      <p class="ans">Concede the true part first — disarming, and it's what he wants. A large share of demand here is rules-driven by construction; that's the point of a regulated liquid asset and why spreads are stable. Then pivot: "which is exactly why the marginal buyer matters. When rules-driven demand is satisfied, the price is set by whoever did the work — and in a stress, that's the only bid on the screen."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">16</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">What would actually make you sell?</p>
+      <p class="ans">Categories, not positions: a change in <b>eligibility</b> (classification, risk weight, index exclusion) does more selling than a change in credit; a loss of reporting; a structural amendment you didn't underwrite. "Credit deterioration is usually the slowest of the reasons, which tells you something about what this asset class is really exposed to."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">17</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Cover pool or issuer — which do you actually underwrite?</p>
+      <p class="ans">"I underwrite the <b>issuer</b>, and I stress the <b>pool</b>." In practice covered bonds are bought as a bank exposure with a very good tail hedge; the pool determines the shape of the tail, not the probability of getting there. It's the honest description, and it explains why sovereign and bank fundamentals still drive spreads in a supposedly ring-fenced product.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="investor risk">
+      <div class="qnum">18</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Investor lens</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Are bank treasuries distorting this market by being price-insensitive buyers?</p>
+      <p class="ans">Correct the premise precisely rather than rejecting it. Bank liquidity books are <b>rules-sensitive rather than price-insensitive</b> — they buy what regulation says is liquid, in the currencies the balance sheet needs, and are relatively indifferent to 2bp because they're solving a different problem. That does compress dispersion in normal times. The interesting question is what happens when the rules change rather than the price. "If you want to know what my bid does next, read the regulation, not the screen."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>C. Structure &amp; regulation <span>Overlaps Roundtable 2 and Panel V — tee them up, don't duplicate</span></h3>
+
+    <div class="q" data-d="med" data-t="reg cross">
+      <div class="qnum">19</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">The EBA has recommended third-country equivalence built on reciprocity. Good news, or a decade of process?</p>
+      <p class="ans">Get the public facts right: the EBA's September 2025 advice supported an equivalence regime <b>in principle</b>, with reciprocity as a condition, and commentators have flagged that implementation is the hard part. Your angle: equivalence changes the <i>eligibility</i> of non-EEA paper for EU bank buyers, and eligibility gates matter more than spread. But reciprocity is a political mechanism applied to a technical problem — "it will help the markets that already had the option, and take longest for the markets that need it most."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="reg">
+      <div class="qnum">20</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">Would equivalence change what you buy, or just what you pay?</p>
+      <p class="ans">Both, in that order. It first changes the <b>size of the eligible universe</b> for regulated European buyers; spread convergence is the consequence, not the cause. Published estimates of the compression have been mid-single-digit bp — cite as research, not as your target.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="reg risk">
+      <div class="qnum">21</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Structure &amp; reg</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Is reciprocity fair on small markets with no EU issuers to reciprocate for?</p>
+      <div class="warn"><b>Policy fairness is political.</b> Answer on <b>consequences</b>, and don't criticise a named regulator.</div>
+      <p class="ans">"I'll leave fairness to the people who drafted it and stick to what it does." A reciprocity test rewards two-way flow; markets whose banks fund domestically have nothing to trade, so the test bites hardest exactly where market-building is most needed. That's an argument for outcome-based assessment alongside reciprocity — a design question already being discussed publicly. Hand to Rada or to Panel V.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="reg investor">
+      <div class="qnum">22</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Liquidity classification, risk weight, repo eligibility, index inclusion — which matters most?</p>
+      <p class="ans">Your cleanest set-piece and the clearest version of Message 02. They're a <b>chain, not a menu</b>: the weakest link sets the clearing price because each removes a different buyer type. Lose liquid-asset classification and you lose bank treasuries; lose the risk weight and you lose capital-constrained buyers; lose repo and you lose the leveraged bid; lose the index and you lose the passive bid. "Adding overcollateralisation to fix a missing eligibility is like adding a fifth lock to a door that isn't in a wall."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="reg">
+      <div class="qnum">23</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">Name one regulatory change that would open the most new markets.</p>
+      <p class="ans">Have one ready — vagueness wastes the slot. Best candidate: a <b>predictable, outcome-based route to eligibility for non-EEA frameworks, with a published timetable</b>. Not because the treatment is generous, but because a known process lets an issuer build a five-year plan. Today many can't tell whether the work pays off, so they don't start.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="reg">
+      <div class="qnum">24</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">Securitisation reform is making RMBS cheaper to hold. Does the covered bond moat narrow?</p>
+      <p class="ans">Concede the direction, dispute the substitution. They compete for the issuer's collateral, not the investor's mandate — a liquidity portfolio and an ABS mandate are different books with different rules. What reform genuinely changes is the <b>issuer's</b> marginal choice of where to put a mortgage, which changes covered supply and pool composition later. "The competition happens on the origination side and shows up in my market two years later."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="reg">
+      <div class="qnum">25</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">Has harmonisation made covered bonds boring in a good way, or squeezed out the innovation new markets need?</p>
+      <p class="ans">A genuine two-hander — good place to differ politely with Elena. Harmonisation lowered the cost of comparison (good for new entrants) but raised the entry bar and made "we're nearly compliant" a weak pitch. Net: helps issuers who can meet the standard, hurts those needing a transitional path. "Standards are a ladder for some and a wall for others; the design question is whether we build any rungs."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="reg risk">
+      <div class="qnum">26</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Structure &amp; reg</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Should the EU insist others copy EU legislation, or accept outcome equivalence?</p>
+      <div class="warn">Don't tell a regulator what to do from an FT stage while wearing a bank's name. Frame as a trade-off with consequences.</div>
+      <p class="ans">"Both approaches have a cost, and it's worth being explicit about who pays it." Copy-in gives certainty and excludes functioning frameworks built on other legal traditions — common law, contractual structures, agency models. Outcome-based is more inclusive and much more expensive to supervise. Then the neutral buyer's view: "I need <i>predictability</i> more than I need either. Tell me the test and I'll tell my issuers how to pass it."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="reg">
+      <div class="qnum">27</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">Soft bullet, conditional pass-through — do extendable maturities help a new market or scare investors?</p>
+      <p class="ans">Soft bullet is close to market standard and priced as such. Conditional pass-through solves a rating problem and creates an investor problem: extension risk is hard to hold in a portfolio measured on liquidity, so it can narrow the very buyer base a new issuer needs. "It's a legitimate tool for getting a rating. It is rarely a good tool for getting a book." <i>This is your polite disagreement with the structurer's instinct.</i></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>D. From concept to debut <span>The core of the session's stated agenda</span></h3>
+
+    <div class="q" data-d="easy" data-t="debut">
+      <div class="qnum">28</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">What should a first-time issuer do twelve months out that they usually don't?</p>
+      <p class="ans">Three concrete actions: <b>publish pool data before you need to</b> — a year of reporting nobody reads is the cheapest credibility you will ever buy; <b>get the eligibility questions answered in writing</b> before you write the prospectus; and <b>meet investors who will say no</b>, because their objections are your document's to-do list. "Roadshow the people who can't buy you yet. They're the ones who'll tell you why."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="easy" data-t="debut">
+      <div class="qnum">29</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">What makes a good roadshow from the investor's chair?</p>
+      <p class="ans">Bring the person who can answer the follow-up — a treasurer without a lawyer or risk officer stalls on the third question. Lead with framework and eligibility, not the country's GDP growth. Say what you'll do <b>next year</b>, not just this week. Answer "what goes wrong" before you're asked.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut risk">
+      <div class="qnum">30</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">How much does an anchor investor — EBRD, IFC, a development bank — move your decision?</p>
+      <div class="warn">Rada Tomova is beside you. The honest answer is genuinely complimentary if framed right.</div>
+      <p class="ans">"An anchor buys time, not conviction — and time is the scarcer of the two." What a DFI anchor really delivers: diligence you can partly rely on, a completed first transaction so a curve can start, and a signal that someone with country expertise stayed in the room. What it can't do is make the bond eligible or liquid. "I'd rather a development bank spent a euro on the framework than on the order book — and in fairness, that's mostly what EBRD does."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut cross">
+      <div class="qnum">31</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">Local currency first, or hard currency first?</p>
+      <p class="ans">Strong, well-supported view: <b>local first, almost always.</b> The covered bond's job in a developing market is to build a domestic long-term funding curve; a hard-currency debut that isn't naturally hedged imports FX risk into a mortgage book to solve a funding problem. Exception: when the domestic investor base genuinely doesn't exist yet and international issuance is a way of importing standards. Nod to EBRD's local-currency work — accurate and generous.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut cross">
+      <div class="qnum">32</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">EUR, USD or GBP for an international debut — how should an issuer choose?</p>
+      <p class="ans">Your most distinctive contribution, because you hold all three. Currency is a choice of <b>rulebook and buyer</b>, not of cost: EUR gives the deepest, most rules-driven bid and clearest index architecture; USD reaches a bigger, more ratings-led buyer with larger tickets and 144A machinery; GBP is smaller but stickier, floating-rate in habit, and a genuine home for issuers with natural sterling assets. "Pick the currency whose investors you want still there in year five, then solve the basis."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut">
+      <div class="qnum">33</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">Is a domestic market a prerequisite for an international one, or a distraction?</p>
+      <p class="ans">Prerequisite for durability, not for the first trade. A domestic bid stops an international programme becoming a fair-weather product — it's the buyer of last resort when cross-border investors step back. "Every market that only ever issued abroad has eventually discovered why that was a problem."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="easy" data-t="debut">
+      <div class="qnum">34</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">Most common mistake in a debut investor presentation?</p>
+      <p class="ans">Selling the country instead of the structure — thirty slides of macro and four on the cover pool. The investor's question isn't "is this a good economy", it's "what do I own on the day the issuer stops paying". Runner-up: no page on eligibility.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut">
+      <div class="qnum">35</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">How much does the third deal matter compared with the first?</p>
+      <p class="ans">Your line-of-the-day candidate: "the first deal is marketing, the third deal is a market." Three points make a curve; a curve makes relative value; relative value makes a secondary; a secondary makes a buyer who wasn't in the first book. "Which is why I judge a debut by the calendar behind it, not the cover of it."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut">
+      <div class="qnum">36</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">Harder sell: a small issuer in a big market, or a big issuer in a small market?</p>
+      <p class="ans">Made for this panel — Triodos and Fairstone are the first, UzMRC arguably the second. Small-in-big has the framework and comparables but competes with national champions for attention and pays a size and liquidity premium. Big-in-small has scarcity value and national-champion status but carries country and framework risk. "The small issuer's problem is being ignored. The small market's problem is being unowned. Only one of those can be fixed by the issuer alone."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="debut">
+      <div class="qnum">37</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">Is the mortgage refinancing agency model — Uzbekistan, Korea, Malaysia, Japan, Canada Mortgage Bonds — a shortcut or a crutch?</p>
+      <p class="ans">Even-handed and useful, and it lets you be generous to Farmanov on substance. It solves aggregation and standardisation, genuinely the hard part in a fragmented banking system, and creates one credit investors can learn instead of twenty. The risk is that it substitutes for bank-level capability so nothing develops behind it, and concentrates a market in a single quasi-public issuer. "It's the right first institution. The test is whether it makes itself less necessary over a decade."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="debut risk">
+      <div class="qnum">38</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Debut mechanics</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Should development banks be creating markets that wouldn't otherwise exist?</p>
+      <div class="warn">A question about someone else's mandate, asked in front of them. Don't adjudicate — reframe as design.</div>
+      <p class="ans">"Not my mandate to judge, but there's a version of the question I can answer." Market-building works when spent on framework, data and standards, because those persist. It works less well spent on price, because the first deal needing a subsidy usually means the second will too. "Build the road, don't pay for the taxi."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>E. ESG and green <span>Triodos owns this ground — contribute mechanics, not doctrine</span></h3>
+
+    <div class="q" data-d="med" data-t="esg investor">
+      <div class="qnum">39</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">ESG</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Does a green label change your bid?</p>
+      <div class="warn">Don't quantify a greenium and don't attribute a pricing view to HSBC.</div>
+      <p class="ans">Separate the two effects — the sophisticated answer. A label reliably <b>widens the buyer list</b> (mandated funds that otherwise couldn't participate) and only sometimes narrows the spread. For an established issuer the second effect is what gets discussed. For a debut, the first is worth far more: more accounts means a better-distributed book, which is the durable benefit. "Green is a distribution tool before it's a pricing tool, and debut issuers should value it that way."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="esg reg">
+      <div class="qnum">40</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">ESG</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">The EuGB standard: help or hurdle for a new market?</p>
+      <p class="ans">Both — be concrete about which. It raises credibility and cuts the "is it really green" diligence. It also demands taxonomy alignment and housing-stock data many markets don't have. "For a new market the honest sequence is a credible use-of-proceeds framework now and taxonomy alignment when the data exists — not a EuGB label the pool can't support." Cross-reference: Workshop C at this congress covers 2026 green maturities and the refinance-green-or-go-conventional trade-off.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="esg risk">
+      <div class="qnum">41</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">ESG</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Isn't ESG a rich-market luxury? Frontier markets just need housing finance.</p>
+      <div class="warn">Politically loaded in every direction. Do not take a side on the politics.</div>
+      <p class="ans">Move it from values to credit, where you're solid and additive: the energy performance and climate exposure of a housing stock is a <b>collateral quality question</b> — it affects running costs, affordability, insurability and long-run value, at any income level. "I'm not asking a new issuer for a label. I'm asking what their pool looks like in thirty years, which is the same question I ask everyone." Then hand to Kees, whose numbers make the point for you: 63% of homes Triodos finances carry an energy label of A or above.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="esg">
+      <div class="qnum">42</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">ESG</span></div>
+      <p class="qtext">Would you buy a green covered bond from a jurisdiction with no taxonomy?</p>
+      <p class="ans">Answer with the test, not the verdict: what matters is whether criteria are published, externally reviewed and reported against consistently. A local standard applied honestly is more useful than a borrowed standard applied loosely. Flag the real constraint politely — some mandates require specific alignment, which is fund documentation rather than a judgement on the issuer.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>F. Cross-border and global <span>Where your vantage point is a genuine asset</span></h3>
+
+    <div class="q" data-d="med" data-t="cross">
+      <div class="qnum">43</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">Is this a global market, or a European product with tourists?</p>
+      <p class="ans">Classic Kemmish framing — meet the wit, then be substantive. Today it's a European <i>pricing</i> market with global issuance: the deepest bid, the index architecture and the regulatory definitions are European, so a Canadian, Australian or Korean issuer is largely priced against European comparables. It becomes global when a non-European buyer base sets the price for non-European paper. "We'll know it's global when a Singapore deal doesn't need a Frankfurt investor to decide what it's worth."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="cross risk">
+      <div class="qnum">44</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Cross-border</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Basel III divergence between the US, EU and UK — what does fragmentation do to cross-border demand?</p>
+      <div class="warn">Don't criticise a named regulator or comment on any jurisdiction's political direction.</div>
+      <p class="ans">Stick to mechanics: divergent capital and liquidity treatment means the same bond is worth a different amount to buyers in different jurisdictions, so the marginal buyer becomes jurisdiction-specific and cross-border arbitrage weakens. Effect: more dispersion, thinner secondary in the non-domestic name, and a bigger premium for anything needing a cross-border buyer to clear. "Fragmentation doesn't usually show up as wider spreads. It shows up as fewer people in the book."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="cross risk">
+      <div class="qnum">45</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Cross-border</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Has geopolitics entered your country risk assessment in ways it hadn't five years ago?</p>
+      <div class="warn"><b>Never describe HSBC's country risk appetite, limits or internal process.</b> Industry generalities only, then stop.</div>
+      <p class="ans">"I can talk about how the market thinks, not how my institution decides." Generally: investors now ask about payment infrastructure, sanctions and convertibility as questions separate from credit — those determine whether you get paid rather than whether the borrower can pay. For a covered bond that's live, since the structure assumes an administrator can operate and remit. Then stop. Do not continue into examples.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="cross">
+      <div class="qnum">46</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">Which Asian or non-European model travels best to new markets?</p>
+      <p class="ans">Compare structures rather than ranking countries: the <b>agency/refinancing model</b> (Korea, Malaysia, Japan) travels well into fragmented banking systems; the <b>legislative bank-issuer model</b> (Europe, Canada, Australia, Singapore) travels well where a handful of banks dominate origination and the insolvency regime is strong. "Match the model to your banking system's concentration, not to whichever conference you attended most recently."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="cross">
+      <div class="qnum">47</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Cross-border</span></div>
+      <p class="qtext">What could Europe learn from non-European markets, rather than the other way round?</p>
+      <p class="ans">Generous, memorable, flatters your co-panellists. Three candidates: Canada's <b>single registry and one supervisor</b> for the whole product; Canada and Australia's discipline on issuance caps as a public encumbrance limit; and the agency markets' willingness to standardise loan documentation at origination, which is what actually makes a pool comparable. "Europe harmonised the bond. Some other markets harmonised the mortgage, which is harder and worth more."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="cross investor">
+      <div class="qnum">48</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Cross-border</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Can the eurozone become a net exporter of covered bonds — or only of covered bond standards?</p>
+      <p class="ans">Cross-reference Panel V and be precise: Europe already exports the <b>standard</b> (most new frameworks are recognisably EU-derived) and imports the <b>issuance</b> (non-EEA issuers raising euros). Net export of the product itself requires a non-European buyer base deep enough to absorb European paper — that's a savings and pension-system question, not a covered bond question.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>G. Provocations <span>Kemmish specials. Prepared, or it's a bad clip.</span></h3>
+
+    <div class="q" data-d="hard" data-t="risk">
+      <div class="qnum">49</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">"Around the world in 80 deals" — but is anyone actually asking for these bonds, or are we manufacturing supply to fill a conference agenda?</p>
+      <p class="ans">Enjoy it, answer straight. Demand for <i>the asset class</i> is structural and rules-driven, so it's real. Demand for <i>any particular new name</i> is not automatic and shouldn't be — that discipline is what keeps the label meaning something. "The market doesn't need eighty deals. It needs eight markets that are still here in 2035, and we don't yet know which eight."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk">
+      <div class="qnum">50</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Aren't you just talking your book?</p>
+      <p class="ans">Short, good-humoured, no defensiveness. "If I were, I'd be arguing for less supply and wider spreads, and I'm doing the opposite." Then the substance: a buy-and-hold liquidity investor's interest is in more eligible issuers, not fewer — which is genuinely aligned with everyone on this panel.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk">
+      <div class="qnum">51</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Which of these new markets is going to disappoint us? Name one.</p>
+      <div class="warn"><b>Never name a country.</b> Most likely to be quoted, most likely to cause an internal problem.</div>
+      <p class="ans">"I'll give you the failure mode rather than the country — partly because it's more useful and mostly because I'd like to be invited back." The pattern that disappoints: a framework passed to satisfy an external adviser, one debut done for the photograph, then a three-year gap. "It isn't bad markets that disappoint investors. It's good markets that stop issuing."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk reg">
+      <div class="qnum">52</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span><span class="tag">Structure &amp; reg</span></div>
+      <p class="qtext">What's the systemic risk of exporting covered bonds to countries with untested insolvency regimes?</p>
+      <p class="ans">Take it seriously — it's the best question on the list. Two real risks: <b>label contagion</b>, where one bad outcome reprices an asset class built on the assumption that this never happens; and <b>encumbrance</b>, where a young banking system pledges its best assets before it has a deposit base or a resolution regime to absorb the rest. Mitigations exist and are public: issuance caps, supervisory approval, encumbrance disclosure. "The product isn't the risk. Doing it without the second half of the framework is." Note the moderator has publicly argued encumbrance concerns are overstated — expect pushback and welcome it.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk investor">
+      <div class="qnum">53</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">Are covered bonds over-rated — literally? Should anyone believe a AAA from a frontier market?</p>
+      <div class="warn">Do not criticise rating agencies by name; four of them are speaking at this congress.</div>
+      <p class="ans">"A rating is an opinion about default probability. It was never a promise about liquidity, and liquidity is usually what an investor actually feels." So the AAA can be defensible and still not be the reason you own it. Redirect to your ground: "I don't buy the rating. I buy what the rating is derived from, and then I ask what happens if the derivation is wrong."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk">
+      <div class="qnum">54</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">Where does a hypothetical Uzbek / Kazakh / Indian covered bond need to price?</p>
+      <div class="warn"><b>Absolute no.</b> Pricing a hypothetical from a stage, as a named bank's PM, is the highest-risk answer available to you.</div>
+      <p class="ans">"I'm not going to price a bond that doesn't exist from a stage — nobody would thank me, least of all the issuer. But I'll tell you what would compress it." Then list the compressors: eligibility upgrades, index inclusion, a second and third deal, published pool data, a domestic bid. You've refused and still given the room more than a number would have.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk">
+      <div class="qnum">55</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">What's your book doing right now — buying or selling? / Would your risk committee approve this?</p>
+      <div class="warn"><b>Absolute no-go.</b> Positions, flows, limits, governance. No hedged version exists.</div>
+      <p class="ans">Say it plainly and move on without apology: "I can't talk about positions or process — but the general question behind it is a good one, which is what makes a liquidity portfolio change its mind. It's almost always a rule, not a price." Redirect, don't squirm.</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="hard" data-t="risk">
+      <div class="qnum">56</div><div class="qbody">
+      <div class="tags"><span class="tag hard">Hard</span><span class="tag">Reputational risk</span></div>
+      <p class="qtext">If covered bonds are so safe, why does anyone need a development bank to hold their hand?</p>
+      <p class="ans">"Because the bond is safe and the <i>market</i> isn't — those are different objects." Safety is a property of a mature framework with a tested insolvency regime and a functioning secondary. Getting from a statute to that state takes a decade and a first buyer willing to be early. "Safety is an outcome of institutional maturity, not an input."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="qgroup">
+    <h3>H. Likely audience questions <span>Small room, roundtable format — expect several</span></h3>
+
+    <div class="q" data-d="easy" data-t="debut">
+      <div class="qnum">57</div><div class="qbody">
+      <div class="tags"><span class="tag easy">Easy</span><span class="tag">Debut mechanics</span></div>
+      <p class="qtext">"We're planning a debut in 2027 — what's the one thing we should do?"</p>
+      <p class="ans">Have a single answer ready, not three. "Start publishing your pool report a year before you need it, in the standard template, even if nobody asks for it. It costs almost nothing and it's the only thing on your list a buyer can verify without trusting you."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor">
+      <div class="qnum">58</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">"What would make you buy more non-EEA paper tomorrow?" <span style="color:var(--ink-3)">— likely from an association or regulator</span></p>
+      <p class="ans">Answer in the order that reflects Message 02: a clear and durable eligibility position; index treatment that matches it; issuers who commit publicly to a repeat calendar. "Nothing on that list is about the bonds. All of it is about whether I can build a position rather than take a trade."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="cross investor">
+      <div class="qnum">59</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Cross-border</span><span class="tag">Investor lens</span></div>
+      <p class="qtext">"India — is it ever going to happen?" <span style="color:var(--ink-3)">— your background makes this land on you</span></p>
+      <div class="warn">Do not predict what the RBI or the Indian government will do, and don't grade Indian policy. Preconditions only.</div>
+      <p class="ans">High-value, high-credibility — prepare it properly. The publicly discussed preconditions for any large market of this type: enabling legislation or a clear regulatory route; certainty on segregation in insolvency; a mortgage market of sufficient scale and standardisation; and a domestic long-duration investor base — insurers and pension funds — that wants the duration. "India has more of those pieces than most people assume, and the sequencing is a domestic policy matter, not something for me to forecast from Seville." Then generalise back to the panel: "the pattern is the same everywhere — the bond is the last thing you build, not the first."</p>
+      </div>
+    </div>
+
+    <div class="q" data-d="med" data-t="investor esg">
+      <div class="qnum">60</div><div class="qbody">
+      <div class="tags"><span class="tag med">Medium</span><span class="tag">Investor lens</span><span class="tag">ESG</span></div>
+      <p class="qtext">"Is there a size below which you simply won't participate?" / "Use-of-proceeds only, or sustainability-linked too?"</p>
+      <p class="ans">On size: describe index thresholds and the point at which secondary liquidity thins, explicitly as market convention rather than an internal limit. On format: use-of-proceeds is the established format here because proceeds tie to a pool that already exists; sustainability-linked structures sit awkwardly with a ring-fenced instrument whose cashflows are meant to be insulated from issuer behaviour. A structural observation, not a policy view.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ================= TAB 4: GUARDRAILS ================= -->
+<div role="tabpanel" id="p-guard" aria-labelledby="t-guard" hidden="">
+<section>
+  <div class="sec-head"><h2>Guardrails</h2><span class="note">Assume recorded, on the record, quotable</span></div>
+  <div class="nogo">
+    <div><b>Never</b>Current or intended positions, sizes, limits, P&amp;L or flows.</div>
+    <div><b>Never</b>A spread or price on any deal — live, past or hypothetical.</div>
+    <div><b>Never</b>Credit opinions on a named issuer, bank or sovereign.</div>
+    <div><b>Never</b>Internal governance: risk appetite, credit committee, country limits.</div>
+    <div><b>Never</b>Anything about HSBC's own funding, issuance or regulatory dialogue.</div>
+    <div><b>Never</b>Political commentary on any country, including those on the panel.</div>
+    <div><b>Never</b>"You should buy…" — that is advice, not commentary.</div>
+    <div><b>Never</b>A joke at the expense of a co-panellist's market, however affectionate.</div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Bridging lines</h2><span class="note">Memorise four. They buy three seconds and a way out.</span></div>
+  <div class="stack">
+    <div class="item"><span class="lbl">Deflect</span><p>"I can't speak for HSBC's book — but I can tell you what any liquidity portfolio has to solve for, which is probably more useful anyway."</p></div>
+    <div class="item"><span class="lbl">Refuse a name</span><p>"I'd rather answer that with a test than a country."</p></div>
+    <div class="item"><span class="lbl">Defer</span><p>"That's really a question for the ratings panel — but from the buyer's chair, what it means in practice is…"</p></div>
+    <div class="item"><span class="lbl">Disagree</span><p>"Let me push back slightly, and I think it matters for whoever issues next year…"</p></div>
+    <div class="item"><span class="lbl">Unbundle</span><p>"There are two questions in there and they have different answers — let me split them."</p></div>
+    <div class="item"><span class="lbl">Concede</span><p>"I don't know. What I do know is…"</p></div>
+    <div class="item"><span class="lbl">Reclaim</span><p>"Before we move on — the part of that I'd want an issuer in the room to hear is…"</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Answer architecture</h2><span class="note">45–60 seconds, four beats</span></div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Beat</th><th>Seconds</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td>Claim</td><td>5–8</td><td>One sentence someone could quote. Say it first, not last — panels get interrupted.</td></tr>
+        <tr><td>Mechanism</td><td>15–20</td><td>One reason, not three. A single causal chain beats a list.</td></tr>
+        <tr><td>Concrete</td><td>15–20</td><td>A public number, a rule, or a named market structure. This is what makes you credible rather than fluent.</td></tr>
+        <tr><td>Hand-off</td><td>5–8</td><td>Give it to a co-panellist by name, or pose the next question. Moderators reward this and it gets you invited back in.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Questions to ask your co-panellists</h2><span class="note">Generosity is the cheapest airtime there is</span></div>
+  <div class="stack">
+    <div class="item"><span class="lbl">To Murodjon</span><p>"What was the single hardest thing to get right that wasn't on any adviser's checklist?"</p></div>
+    <div class="item"><span class="lbl">To Peter</span><p>"Outside the Big Six in a mature market — does the framework help you, or just make you comparable to people much larger than you?"</p></div>
+    <div class="item"><span class="lbl">To Rada</span><p>"Where does EBRD's euro go furthest — the framework, the data, or the order book?"</p></div>
+    <div class="item"><span class="lbl">To Elena</span><p>"What do first-time issuers argue with you about that they should simply accept?"</p></div>
+    <div class="item"><span class="lbl">To Kees</span><p>"For a small bank, is the green label a way of being found, or one more thing to defend?"</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Before you fly</h2><span class="note">In this order</span></div>
+  <ul class="checklist">
+    <li><b>Clear it.</b> Run the four spine messages and the guardrail list past HSBC comms and compliance; get external-speaking approval on file, in writing.</li>
+    <li><b>Agree your disclaimer.</b> Confirm the exact "views are my own" wording and say it once, in the opener, not repeatedly.</li>
+    <li><b>Ask FT Live</b> whether the roundtable is recorded, filmed, streamed or Chatham House. Assume on the record regardless.</li>
+    <li><b>Email the moderator</b> a week out with two questions you'd love and one you'd rather he put to someone else. Moderators almost always use them.</li>
+    <li><b>Verify Fairstone's covered bond status</b> and re-check the H1 2026 supply figures and the equivalence timetable — both will have moved.</li>
+    <li><b>Rehearse Q09, Q54 and Q55 aloud.</b> Those three are where an unprepared answer costs you something real.</li>
+    <li><b>Pick your one line.</b> Decide which soundbite you actually want quoted, and use it early.</li>
+    <li><b>Write your two-sentence closer now,</b> not at 15.48.</li>
+  </ul>
+</section>
+</div>
+
+<footer>
+  <p><b>Assumptions:</b> agenda per the 08.09 draft; running order may change. Built only from publicly available sources — nothing draws on internal HSBC information. Answer frames are drafts for you to make your own, not approved lines. Items marked <span class="flag">Verify</span> are inferences to check, not facts to assert.</p>
+  <p><b>Verify before use:</b> H1 2026 EUR covered supply (~€122bn, +21% y/y; CEE +94%) and full-year forecasts (€180–190bn) come from mid-2026 market commentary. The third-country equivalence position reflects the EBA's September 2025 advice and later legal commentary. Triodos figures are H1 2026 as reported; UzMRC figures and the Fitch 'BB'/Positive rating are as published July 2026.</p>
+  <p>Sources: <a href="https://globalcoveredbonds.com/">The Covered Bond Congress 2026</a> · <a href="https://globalcoveredbonds.com/speakers/aseem-gupta">Speaker profile</a> · <a href="https://uzmrc.uz/en/">UzMRC</a> · <a href="https://hypo.org/news/ebrd-front-row-cee-covered-bonds-ebrdmore">ECBC on EBRD and CEE covered bonds</a> · <a href="https://www.investing.com/news/company-news/triodos-bank-h1-2026-slides-profit-rebounds-transformation-advances-93CH-4857050">Triodos H1 2026</a> · <a href="https://www.newswire.ca/news-releases/fairstone-bank-of-canada-announces-successful-closing-of-500-million-deposit-note-offering-811484642.html">Fairstone deposit notes</a> · <a href="https://www.mayerbrown.com/en/insights/publications/2025/10/equivalence-regime-for-third-country-covered-bonds-eba-recommends-an-equivalence-regime-in-principle-though-realworld-implementation-may-prove-challenging">Mayer Brown on EBA equivalence</a> · <a href="https://pfandbrief.market/en/risk-weights-and-third-country-equivalence-for-covered-bonds/">pfandbrief.market</a> · <a href="https://www.fxstreet.com/analysis/covered-bond-market-update-202606291348">Covered bond market update, June 2026</a> · <a href="https://www.globalcapital.com/article/28mycv5675wj3g2mh2xog/covered-bonds/guest-comment-covered-bond-encumbrance-is-not-so-bad">Kemmish on encumbrance</a></p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  /* tabs */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  function show(id){
+    tabs.forEach(function(t){
+      var sel = t.id === id;
+      t.setAttribute('aria-selected', sel ? 'true' : 'false');
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !sel;
+    });
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ show(t.id); });
+    t.addEventListener('keydown', function(e){
+      var i = tabs.indexOf(t), n = null;
+      if (e.key === 'ArrowRight') n = tabs[(i+1) % tabs.length];
+      if (e.key === 'ArrowLeft')  n = tabs[(i-1+tabs.length) % tabs.length];
+      if (n){ e.preventDefault(); n.focus(); show(n.id); }
+    });
+  });
+
+  /* question filters */
+  var qs = document.querySelectorAll('.q');
+  var chips = document.querySelectorAll('.chip');
+  var search = document.querySelector('.qsearch');
+  var count = document.getElementById('count');
+  var active = { d:new Set(), t:new Set() };
+
+  function apply(){
+    var term = (search.value || '').trim().toLowerCase();
+    var shown = 0;
+    qs.forEach(function(q){
+      var d = q.getAttribute('data-d');
+      var t = (q.getAttribute('data-t') || '').split(' ');
+      var okD = active.d.size === 0 || active.d.has(d);
+      var okT = active.t.size === 0 || t.some(function(x){ return active.t.has(x); });
+      var okS = !term || q.textContent.toLowerCase().indexOf(term) !== -1;
+      var vis = okD && okT && okS;
+      q.hidden = !vis;
+      if (vis) shown++;
+    });
+    count.textContent = shown + ' shown';
+    document.querySelectorAll('.qgroup').forEach(function(g){
+      g.hidden = !g.querySelector('.q:not([hidden])');
+    });
+  }
+
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      var f = c.getAttribute('data-f'), v = c.getAttribute('data-v');
+      var on = c.getAttribute('aria-pressed') === 'true';
+      c.setAttribute('aria-pressed', on ? 'false' : 'true');
+      if (on) active[f].delete(v); else active[f].add(v);
+      apply();
+    });
+  });
+  search.addEventListener('input', apply);
+  apply();
+})();
+</script>
+
+</body></html>
